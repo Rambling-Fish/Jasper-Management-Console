@@ -1,0 +1,6 @@
+eclipse.m2.defaultRuntime=/usr/share/java/maven-3.0.3
+eclipse.m2.downloadSources=true
+eclipse.m2.globalSettingsFile=/usr/share/java/maven-3.0.3/conf/settings.xml
+eclipse.m2.runtimes=/usr/share/java/maven-3.0.3
+eclipse.m2.updateProjects=true
+eclipse.preferences.version=1

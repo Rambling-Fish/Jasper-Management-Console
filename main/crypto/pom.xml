@@ -6,4 +6,11 @@
     <version>1.0</version>
   </parent>
   <artifactId>jmanage-crypto</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>jmanage</groupId>
+  		<artifactId>jmanage-utils</artifactId>
+  		<version>1.0</version>
+  	</dependency>
+  </dependencies>
 </project>
