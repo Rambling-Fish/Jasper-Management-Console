@@ -36,5 +36,8 @@
   	<module>utils</module>
   	<module>management</module>
   	<module>connector</module>
+  	<module>tools</module>
+  	
   </modules>
+ 
 </project>
