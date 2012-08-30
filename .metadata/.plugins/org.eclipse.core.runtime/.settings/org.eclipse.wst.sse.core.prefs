@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=ear,ejbs,logging,primary-source,project,projects,servlet,servlets
+task-tag-projects-already-scanned=auth,cmdui,config,connector,crypto,main,management,services,tools,utils,jManage

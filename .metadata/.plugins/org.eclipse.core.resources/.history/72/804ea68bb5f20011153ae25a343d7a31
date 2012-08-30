@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>jmanage</groupId>
+  <artifactId>main</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+
+  <name>main</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <modules>
+  	<module>auth</module>
+  	<module>alerts</module>
+  	<module>cmdui</module>
+  	<module>config</module>
+  <!-- <module>connector</module>
+  <module>startup</module>
+  <module>modules</module>
+  <module>management</module> -->	
+  	<module>crypto</module>
+  	
+  	<module>services</module>
+  	
+  	  	<module>utils</module>
+  	
+  </modules>
+</project>
