@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="63" version="2.0">
+<workbench progressCount="50" version="2.0">
 <workbenchAdvisor/>
-<window height="980" width="1404" x="1550" y="50">
+<window height="820" width="1214" x="71" y="29">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -13,14 +13,16 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="100" y="22"/>
 <coolItem id="org.eclipse.dltk.tcl.ui.debug.consoleActionSet" itemType="typeToolBarContribution" x="40" y="22"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="98" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="62" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="54" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="32" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="152" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ant.ui.internal.editor.AntEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -35,6 +37,20 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
 </presentation>
 </folder>
 </info>
@@ -42,22 +58,73 @@
 <editor activePart="true" focus="true" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/pom.xml" title="main/pom.xml" tooltip="main/pom.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/pom.xml"/>
 </editor>
-<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="crypto/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/crypto/pom.xml" title="crypto/pom.xml" tooltip="crypto/pom.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/crypto/pom.xml"/>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/alerts/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/alerts/pom.xml" title="main/alerts/pom.xml" tooltip="main/alerts/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/alerts/pom.xml"/>
 </editor>
-<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="tools/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/tools/pom.xml" title="tools/pom.xml" tooltip="tools/pom.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/tools/pom.xml"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AlertInfo.java" partName="AlertInfo.java" path="/Users/saadnouri/JManage-Workspace/main/alerts/src/main/java/org/jmanage/core/alert/AlertInfo.java" title="AlertInfo.java" tooltip="main/alerts/src/main/java/org/jmanage/core/alert/AlertInfo.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/alerts/src/main/java/org/jmanage/core/alert/AlertInfo.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="543" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/management/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/management/pom.xml" title="main/management/pom.xml" tooltip="main/management/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/management/pom.xml"/>
 </editor>
 <editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/auth/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/auth/pom.xml" title="main/auth/pom.xml" tooltip="main/auth/pom.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/auth/pom.xml"/>
 </editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/cmdui/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/cmdui/pom.xml" title="main/cmdui/pom.xml" tooltip="main/cmdui/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/cmdui/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/config/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/config/pom.xml" title="main/config/pom.xml" tooltip="main/config/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/config/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/crypto/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/crypto/pom.xml" title="main/crypto/pom.xml" tooltip="main/crypto/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/crypto/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/services/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/services/pom.xml" title="main/services/pom.xml" tooltip="main/services/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/services/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/connector/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/connector/pom.xml" title="main/connector/pom.xml" tooltip="main/connector/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/connector/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/tools/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/tools/pom.xml" title="main/tools/pom.xml" tooltip="main/tools/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/tools/pom.xml"/>
+</editor>
+<editor id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" partName="main/utils/pom.xml" path="/Users/saadnouri/JManage-Workspace/main/utils/pom.xml" title="main/utils/pom.xml" tooltip="main/utils/pom.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/utils/pom.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MBeanAlertSource.java" partName="MBeanAlertSource.java" path="/Users/saadnouri/JManage-Workspace/main/alerts/src/main/java/org/jmanage/core/alert/source/MBeanAlertSource.java" title="MBeanAlertSource.java" tooltip="main/alerts/src/main/java/org/jmanage/core/alert/source/MBeanAlertSource.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/alerts/src/main/java/org/jmanage/core/alert/source/MBeanAlertSource.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="862" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Repository.java" partName="Repository.java" path="/Users/saadnouri/JManage-Workspace/main/management/src/main/java/org/jmanage/core/management/metadata/Repository.java" title="Repository.java" tooltip="main/management/src/main/java/org/jmanage/core/management/metadata/Repository.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/management/src/main/java/org/jmanage/core/management/metadata/Repository.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="131" selectionOffset="3171" selectionTopPixel="881"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AlertSystemConfig.java" partName="AlertSystemConfig.java" path="/Users/saadnouri/JManage-Workspace/main/alerts/src/main/java/org/jmanage/core/alert/AlertSystemConfig.java" title="AlertSystemConfig.java" tooltip="main/alerts/src/main/java/org/jmanage/core/alert/AlertSystemConfig.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/alerts/src/main/java/org/jmanage/core/alert/AlertSystemConfig.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1981" selectionTopPixel="359"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConnectorConfigRegistry.java" partName="ConnectorConfigRegistry.java" path="/Users/saadnouri/JManage-Workspace/main/connector/src/main/java/org/jmanage/connector/framework/ConnectorConfigRegistry.java" title="ConnectorConfigRegistry.java" tooltip="main/connector/src/main/java/org/jmanage/connector/framework/ConnectorConfigRegistry.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/connector/src/main/java/org/jmanage/connector/framework/ConnectorConfigRegistry.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3280" selectionTopPixel="889"/>
+</editor>
+<editor id="org.eclipse.ant.ui.internal.editor.AntEditor" name="build.xml" partName="build.xml" path="/Users/saadnouri/JManage-Workspace/main/webui/build.xml" title="build.xml" tooltip="main/webui/build.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/webui/build.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="366" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="exe.xml" partName="exe.xml" path="/Users/saadnouri/JManage-Workspace/main/src/assemble/exe.xml" title="exe.xml" tooltip="main/src/assemble/exe.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/main/src/assemble/exe.xml"/>
+</editor>
 </editors>
 <views>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+<view IMemento.internal.id="org.eclipse.search.text.FileSearchResultPage" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" org.eclipse.search.resultpage.limit="1000" org.eclipse.search.resultpage.sorting="2"/>
+</viewState>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (11 items)"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="474"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -86,36 +153,17 @@
 <child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsConnections" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_RemoteSystemsTempFiles" isEnabled="true"/>
 <child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
 <child filterId="org.eclipse.m2e.MavenModuleFilter" isEnabled="false"/>
 </xmlDefinedFilters>
 </customFilters>
-</viewState>
-</view>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
-<viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
-<sorter groupBy="CATEGORY_QUERY">
-<sorter>
-<sort0 sortDirection="1" sortKey="PRIORITY"/>
-<sort1 sortDirection="1" sortKey="RANK"/>
-<sort2 sortDirection="1" sortKey="DATE_CREATED"/>
-<sort3 sortDirection="1" sortKey="NONE"/>
-<sort4 sortDirection="1" sortKey="NONE"/>
-<sort5 sortDirection="1" sortKey="NONE"/>
-<sort6 sortDirection="1" sortKey="NONE"/>
-<sort7 sortDirection="1" sortKey="NONE"/>
-</sorter>
-</sorter>
-<filteredTreeFindHistory/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
@@ -126,13 +174,9 @@
 </view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.m2e.editor.MavenPomEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
-<alwaysOnActionSet id="org.eclipse.dltk.tcl.ui.debug.consoleActionSet"/>
-<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
-<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
-<alwaysOnActionSet id="org.eclipse.rse.core.search.searchActionSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
@@ -183,12 +227,12 @@
 <perspective_action id="org.eclipse.wst.jsdt.ui.JavaPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
 <layout>
@@ -213,14 +257,14 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.3295964" ratioLeft="294" ratioRight="598" relationship="4" relative="org.eclipse.ui.editorss">
+<info part="org.eclipse.ui.editorss" ratio="0.15007216" ratioLeft="208" ratioRight="1178" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.7281421" ratioLeft="533" ratioRight="199" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
@@ -229,15 +273,14 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2450fe6" ratio="0.7493438" ratioLeft="571" ratioRight="191" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.mylyn.tasks.ui.views.tasks" appearance="2" expanded="2">
-<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2450fe6" ratio="0.77021277" ratioLeft="905" ratioRight="270" relationship="2" relative="org.eclipse.ui.editorss">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.5" ratioLeft="256" ratioRight="256" relationship="4" relative="org.eclipse.ui.internal.ViewStack@2450fe6">
@@ -259,157 +302,173 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/auth/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/cmdui/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/utils/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/startup/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/services/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/management/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/crypto/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/connector/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/config/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/connector/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/config/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/alerts/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/cmdui/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/connector/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/services/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/tools/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/utils/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/jManage/java/org/jmanage/webui/dashboard/qualifiers/GenericMBeanCheckQualifier.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/alerts/pom.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/auth/pom.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/main/management/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/management/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/cmdui/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/config/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/crypto/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/services/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/main/jmanage-management/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/connector/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/tools/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/utils/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/main/alerts/src/main/java/org/jmanage/core/alert/source/MBeanAlertSource.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/main/management/src/main/java/org/jmanage/core/management/metadata/Repository.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/main/alerts/src/main/java/org/jmanage/core/alert/AlertSystemConfig.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/main/connector/src/main/java/org/jmanage/connector/framework/ConnectorConfigRegistry.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ant.ui.internal.editor.AntEditor" path="/main/webui/build.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ant.ui.internal.editor.AntEditor" path="/main/webui/old_build.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/main/client/pom.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/main/src/assemble/exe.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/main/pom.xml"/>
 </editors>
-<item historyLabel="startup/pom.xml" index="4"/>
-<item historyLabel="services/pom.xml" index="5"/>
-<item historyLabel="management/pom.xml" index="6">
+<item historyLabel="main/services/pom.xml" index="8"/>
+<item historyLabel="main/management/pom.xml" index="4"/>
+<item historyLabel="main/crypto/pom.xml" index="7"/>
+<item historyLabel="main/services/pom.xml" index="8"/>
+<item historyLabel="main/auth/pom.xml" index="2"/>
+<item historyLabel="main/management/pom.xml" index="4"/>
+<item historyLabel="main/alerts/pom.xml" index="1"/>
+<item historyLabel="main/auth/pom.xml" index="2"/>
+<item historyLabel="main/jmanage-management/pom.xml" index="9">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main/management/pom.xml" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="main/cmdui/pom.xml" index="5"/>
+<item historyLabel="main/config/pom.xml" index="6"/>
+<item historyLabel="main/services/pom.xml" index="8"/>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="main/connector/pom.xml" index="10"/>
+<item historyLabel="main/config/pom.xml" index="6"/>
+<item historyLabel="main/connector/pom.xml" index="10"/>
+<item historyLabel="main/crypto/pom.xml" index="7"/>
+<item historyLabel="main/services/pom.xml" index="8"/>
+<item historyLabel="main/tools/pom.xml" index="11"/>
+<item historyLabel="main/utils/pom.xml" index="12"/>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="main/connector/pom.xml" index="10"/>
+<item historyLabel="main/alerts/pom.xml" index="1"/>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="MBeanAlertSource.java" index="13">
+<position info="not_deleted" x="862" y="0"/>
+</item>
+<item historyLabel="main/alerts/pom.xml" index="1"/>
+<item historyLabel="Repository.java" index="14">
+<position info="not_deleted" x="3171" y="131"/>
+</item>
+<item historyLabel="AlertSystemConfig.java" index="15">
+<position info="not_deleted" x="1981" y="0"/>
+</item>
+<item historyLabel="ConnectorConfigRegistry.java" index="16">
+<position info="not_deleted" x="3280" y="0"/>
+</item>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="build.xml" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="old_build.xml" index="18">
+<position info="not_deleted" x="1044" y="0"/>
+</item>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="build.xml" index="17">
+<position info="not_deleted" x="366" y="0"/>
+</item>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="build.xml" index="17">
+<position info="not_deleted" x="366" y="0"/>
+</item>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="main/client/pom.xml" index="19"/>
+<item historyLabel="exe.xml" index="20">
+<position info="not_deleted" x="243" y="1"/>
+</item>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="exe.xml" index="20">
+<position info="not_deleted" x="284" y="0"/>
+</item>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="exe.xml" index="20">
+<position info="not_deleted" x="350" y="7"/>
+</item>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="exe.xml" index="20">
+<position info="not_deleted" x="472" y="6"/>
+</item>
+<item historyLabel="main/pom.xml" index="0"/>
+<item historyLabel="exe.xml" index="20">
+<position info="not_deleted" x="442" y="9"/>
+</item>
+<item historyLabel="main/pom.xml" index="0">
 <position/>
 </item>
-<item historyLabel="services/pom.xml" index="5"/>
-<item historyLabel="crypto/pom.xml" index="7"/>
-<item historyLabel="services/pom.xml" index="5"/>
-<item historyLabel="connector/pom.xml" index="8"/>
-<item historyLabel="config/pom.xml" index="9"/>
-<item historyLabel="cmdui/pom.xml" index="2"/>
-<item historyLabel="connector/pom.xml" index="10">
-<position info="not_deleted" x="0" y="0"/>
+<item active="true" historyLabel="main/pom.xml" index="21">
+<position info="not_deleted" x="784" y="0"/>
 </item>
-<item historyLabel="config/pom.xml" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="config/pom.xml" index="9"/>
-<item historyLabel="connector/pom.xml" index="8"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="alerts/pom.xml" index="12"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="auth/pom.xml" index="1"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="utils/pom.xml" index="3"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="alerts/pom.xml" index="12"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="alerts/pom.xml" index="12"/>
-<item historyLabel="auth/pom.xml" index="1"/>
-<item historyLabel="alerts/pom.xml" index="12"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="cmdui/pom.xml" index="13"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="config/pom.xml" index="9"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="config/pom.xml" index="9"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="connector/pom.xml" index="14"/>
-<item historyLabel="main/pom.xml" index="0"/>
-<item historyLabel="crypto/pom.xml" index="7"/>
-<item historyLabel="management/pom.xml" index="6"/>
-<item historyLabel="services/pom.xml" index="15"/>
-<item historyLabel="management/pom.xml" index="6"/>
-<item historyLabel="crypto/pom.xml" index="7"/>
-<item historyLabel="tools/pom.xml" index="16"/>
-<item historyLabel="utils/pom.xml" index="17"/>
-<item historyLabel="GenericMBeanCheckQualifier.java" index="18">
-<position info="not_deleted" x="5" y="0"/>
-</item>
-<item historyLabel="utils/pom.xml" index="17"/>
-<item historyLabel="main/alerts/pom.xml" index="19"/>
-<item historyLabel="main/auth/pom.xml" index="20"/>
-<item historyLabel="main/alerts/pom.xml" index="19"/>
-<item historyLabel="utils/pom.xml" index="17"/>
-<item historyLabel="main/pom.xml" index="21"/>
-<item historyLabel="main/auth/pom.xml" index="20"/>
-<item active="true" historyLabel="main/pom.xml" index="21"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@2450fe6"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
-<trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
 </trimArea>
 <trimArea IMemento.internal.id="1024">
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/auth/pom.xml">
-<persistable path="/main/auth/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="shutdown.sh" tooltip="main/webui/bin/shutdown.sh">
+<persistable path="/main/webui/bin/shutdown.sh"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/alerts/pom.xml">
-<persistable path="/main/alerts/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="client.jar" tooltip="main/services/target/client.jar">
+<persistable path="/main/services/target/client.jar"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GenericMBeanCheckQualifier.java" tooltip="jManage/java/org/jmanage/webui/dashboard/qualifiers/GenericMBeanCheckQualifier.java">
-<persistable path="/jManage/java/org/jmanage/webui/dashboard/qualifiers/GenericMBeanCheckQualifier.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="exe.xml" tooltip="main/src/assemble/exe.xml">
+<persistable path="/main/src/assemble/exe.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="utils/pom.xml">
-<persistable path="/utils/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/client/pom.xml">
+<persistable path="/main/client/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="tools/pom.xml">
-<persistable path="/tools/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ant.ui.internal.editor.AntEditor" name="build.xml" tooltip="main/webui/build.xml">
+<persistable path="/main/webui/build.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="services/pom.xml">
-<persistable path="/services/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConnectorConfigRegistry.java" tooltip="main/connector/src/main/java/org/jmanage/connector/framework/ConnectorConfigRegistry.java">
+<persistable path="/main/connector/src/main/java/org/jmanage/connector/framework/ConnectorConfigRegistry.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="management/pom.xml">
-<persistable path="/management/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AlertSystemConfig.java" tooltip="main/alerts/src/main/java/org/jmanage/core/alert/AlertSystemConfig.java">
+<persistable path="/main/alerts/src/main/java/org/jmanage/core/alert/AlertSystemConfig.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="crypto/pom.xml">
-<persistable path="/crypto/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Repository.java" tooltip="main/management/src/main/java/org/jmanage/core/management/metadata/Repository.java">
+<persistable path="/main/management/src/main/java/org/jmanage/core/management/metadata/Repository.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="connector/pom.xml">
-<persistable path="/connector/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MBeanAlertSource.java" tooltip="main/alerts/src/main/java/org/jmanage/core/alert/source/MBeanAlertSource.java">
+<persistable path="/main/alerts/src/main/java/org/jmanage/core/alert/source/MBeanAlertSource.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="config/pom.xml">
-<persistable path="/config/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/utils/pom.xml">
+<persistable path="/main/utils/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="cmdui/pom.xml">
-<persistable path="/cmdui/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/tools/pom.xml">
+<persistable path="/main/tools/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="auth/pom.xml">
-<persistable path="/auth/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/connector/pom.xml">
+<persistable path="/main/connector/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="alerts/pom.xml">
-<persistable path="/alerts/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/services/pom.xml">
+<persistable path="/main/services/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="startup/pom.xml">
-<persistable path="/startup/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/crypto/pom.xml">
+<persistable path="/main/crypto/pom.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/pom.xml">
-<persistable path="/main/pom.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" name="pom.xml" tooltip="main/config/pom.xml">
+<persistable path="/main/config/pom.xml"/>
 </file>
 </mruList>
 </workbench>

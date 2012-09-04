@@ -1,0 +1,31 @@
+<assembly>
+  <id>exe</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+  <dependencySets>
+    <dependencySet>
+      <outputDirectory>${basedir}/build/lib/client</outputDirectory>
+      <outputFileNameMapping>jmanage-client.jar</outputFileNameMapping>
+      <unpack>true</unpack>
+      <scope>runtime</scope>
+      <includes>
+        <include>commons-lang:commons-lang</include>
+        <include>commons-cli:commons-cli</include>
+      </includes>
+    </dependencySet>
+  </dependencySets>
+  <fileSets>
+    <fileSet>
+      <directory>target/classes</directory>
+      <directory>${basedir}/services/target/classes</directory>
+      <directory>${basedir}/management/target/classes</directory>
+      <directory>${basedir}/config/target/classes</directory>
+      <directory>${basedir}/auth/target/classes</directory>
+      <directory>${basedir}/alerts/target/classes</directory>
+      <directory>${basedir}/utils/target/classes</directory>
+      <outputDirectory></outputDirectory>
+    </fileSet>
+  </fileSets>
+</assembly>
