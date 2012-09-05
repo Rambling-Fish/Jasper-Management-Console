@@ -55,14 +55,14 @@
 	            <goals>
 	              <goal>single</goal>
 	            </goals>
-	    		<configuration>
-  				 	<appendAssemblyId>false</appendAssemblyId>
-	        	  	<descriptors>
-	           	 		<descriptor>assembly.xml</descriptor>
-	         		</descriptors>
-        		</configuration>
-        	 </execution>
-	       </executions>
+	          </execution>
+	        </executions>
+  			
+  			<configuration>
+            <descriptors>
+            <descriptor>assembly.xml</descriptor>
+          </descriptors>
+        </configuration>
   		</plugin>
   	</plugins>
   </build>

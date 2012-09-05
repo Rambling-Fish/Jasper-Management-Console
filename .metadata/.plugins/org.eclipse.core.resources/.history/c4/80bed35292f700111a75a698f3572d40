@@ -48,21 +48,21 @@
   			<version>2.3</version>
   			<!--  Add the phase where the assembly plugin to be executed -->
   			<!--  Ref: http://stackoverflow.com/questions/9033920/managing-multi-module-dependencies-with-maven-assembly-plugin -->
-  		    <executions>
-	          <execution>
-	            <id>make-assembly</id>
-	            <phase>package</phase>
-	            <goals>
-	              <goal>single</goal>
-	            </goals>
-	    		<configuration>
-  				 	<appendAssemblyId>false</appendAssemblyId>
-	        	  	<descriptors>
-	           	 		<descriptor>assembly.xml</descriptor>
-	         		</descriptors>
-        		</configuration>
-        	 </execution>
-	       </executions>
+  			   <executions>
+          <execution>
+            <id>make-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+          </execution>
+        </executions>
+  			
+  			<configuration>
+            <descriptors>
+            <descriptor>assembly.xml</descriptor>
+          </descriptors>
+        </configuration>
   		</plugin>
   	</plugins>
   </build>

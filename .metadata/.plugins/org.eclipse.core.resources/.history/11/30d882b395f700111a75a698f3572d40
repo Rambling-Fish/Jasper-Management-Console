@@ -16,9 +16,22 @@
       <!-- Now, select which projects to include in this module-set. -->
       <includes>
         <include>org.jmanage:jmanage-alerts</include>
+        <include>org.jmanage:jmanage-auth</include>
+       
       </includes>
 
-     </moduleSet>
+      <binaries>
+        <outputDirectory>module/${artifactId}</outputDirectory>
+        <unpack>false</unpack>
+
+        <dependencySets>
+          <dependencySet>
+           <outputDirectory>lib</outputDirectory>
+            <unpack>false</unpack>
+          </dependencySet>
+        </dependencySets>
+      </binaries>
+    </moduleSet>
 
     </moduleSets>
  
@@ -28,14 +41,14 @@
   <fileSets>
   <!-- copy the jmanage modules libraries -->
     <fileSet>
-      <directory>${basedir}/*/target/</directory>
-      <outputDirectory>${basedir}/lib</outputDirectory>
+      <directory>*/target/</directory>
+      <outputDirectory>lib</outputDirectory>
       <includes>
         <include>*.jar</include>
       </includes>
     </fileSet>
     <!--  add the Third party jar files / will be needed for the ant build script for webui module -->
-   <!--  <fileSet>
+    <fileSet>
       <directory>thirdparty/</directory>
       <outputDirectory>lib</outputDirectory>
       <includes>
@@ -45,7 +58,7 @@
       <exclude>jfreechart/**</exclude>
       </excludes>
     </fileSet>
-    <fileSet>
+    <!-- fileSet>
       <directory>${project.build.directory}</directory>
       <outputDirectory>/lib</outputDirectory>
       <includes>

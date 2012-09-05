@@ -12,15 +12,49 @@
     <moduleSet>
     <!-- Enable access to all projects in the current multimodule build! -->
       <useAllReactorProjects>true</useAllReactorProjects>
-      
-      <!-- Now, select which projects to include in this module-set. -->
+        <!-- Now, select which projects to include in this module-set. -->
       <includes>
         <include>org.jmanage:jmanage-alerts</include>
+        <include>org.jmanage:jmanage-auth</include>
+        <include>org.jmanage:auth</include>
+        <include>org.jmanage:auth</include>
+        <include>org.jmanage:auth</include>
+        <include>org.jmanage:auth</include>
+        <include>org.jmanage:auth</include>
+        <include>org.jmanage:auth</include>
       </includes>
 
-     </moduleSet>
+      <binaries>
+        <outputDirectory>module1</outputDirectory>
+        <unpack>false</unpack>
 
-    </moduleSets>
+        <dependencySets>
+          <dependencySet>
+            <unpack>false</unpack>
+          </dependencySet>
+        </dependencySets>
+      </binaries>
+    </moduleSet>
+
+    <moduleSet>
+      <useAllReactorProjects>true</useAllReactorProjects>
+
+      <includes>
+        <include>com.test.app:module2:jar</include>
+      </includes>
+
+      <binaries>
+        <outputDirectory>module2</outputDirectory>
+        <unpack>false</unpack>
+
+        <dependencySets>
+          <dependencySet>
+            <unpack>false</unpack>
+          </dependencySet>
+        </dependencySets>
+      </binaries>
+    </moduleSet>
+  </moduleSets>
  
  
  
@@ -28,14 +62,14 @@
   <fileSets>
   <!-- copy the jmanage modules libraries -->
     <fileSet>
-      <directory>${basedir}/*/target/</directory>
-      <outputDirectory>${basedir}/lib</outputDirectory>
+      <directory>*/target/</directory>
+      <outputDirectory>lib</outputDirectory>
       <includes>
         <include>*.jar</include>
       </includes>
     </fileSet>
     <!--  add the Third party jar files / will be needed for the ant build script for webui module -->
-   <!--  <fileSet>
+    <fileSet>
       <directory>thirdparty/</directory>
       <outputDirectory>lib</outputDirectory>
       <includes>
@@ -45,7 +79,7 @@
       <exclude>jfreechart/**</exclude>
       </excludes>
     </fileSet>
-    <fileSet>
+    <!-- fileSet>
       <directory>${project.build.directory}</directory>
       <outputDirectory>/lib</outputDirectory>
       <includes>
@@ -58,6 +92,3 @@
     </fileSet>-->
   </fileSets>
 </assembly>
-
-
-<!--  Ref: http://maven.apache.org/plugins/maven-assembly-plugin/examples/multimodule/module-binary-inclusion-simple.html -->

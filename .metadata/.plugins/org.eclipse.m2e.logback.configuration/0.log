@@ -3941,3 +3941,36 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2012-08-31 13:03:27,606 [Worker-1] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B compile
 2012-08-31 13:06:57,029 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
 2012-08-31 15:37:48,377 [Worker-13] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 14:26:19,762 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-05 14:57:53,247 [Worker-116] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 15:01:58,899 [Worker-124] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 15:02:24,390 [Worker-124] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 15:05:59,802 [Worker-123] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 15:05:59,914 [Worker-123] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-05 15:07:04,989 [Worker-119] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 15:07:04,989 [Worker-119] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B compile
+2012-09-05 15:15:59,690 [Worker-133] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 15:16:22,445 [Worker-138] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 15:16:22,445 [Worker-138] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B compile
+2012-09-05 15:17:12,114 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-05 15:17:17,034 [Worker-142] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-05 15:18:34,801 [Worker-141] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 15:18:34,801 [Worker-141] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2012-09-05 15:19:32,836 [Worker-145] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 15:19:47,190 [Worker-141] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 15:19:47,190 [Worker-141] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B compile
+2012-09-05 15:21:18,981 [Worker-140] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 15:21:18,981 [Worker-140] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B compile
+2012-09-05 15:45:37,330 [Worker-156] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 15:46:02,677 [Worker-156] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 15:46:45,814 [Worker-157] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 16:15:09,297 [Worker-175] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 16:15:18,141 [Worker-180] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-05 16:16:51,073 [Worker-180] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 16:16:51,073 [Worker-180] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean package
+2012-09-05 16:20:24,189 [Worker-185] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 16:20:24,229 [Worker-185] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-05 16:20:39,578 [Worker-191] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 16:20:39,579 [Worker-191] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean package
+2012-09-05 16:21:33,618 [Worker-191] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 16:21:33,645 [Worker-191] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean package

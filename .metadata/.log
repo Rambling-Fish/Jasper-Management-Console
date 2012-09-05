@@ -479,3 +479,15 @@ java.lang.IllegalStateException: basedir /Users/saadnouri/JManage-Workspace/main
 	at org.eclipse.ant.internal.ui.editor.text.XMLTextHover.getAntModelHoverMessage(XMLTextHover.java:146)
 	at org.eclipse.ant.internal.ui.editor.text.XMLTextHover.getHoverInfo(XMLTextHover.java:114)
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:168)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-05 14:26:20.268
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.osgi 2 1 2012-09-05 14:45:42.340
+!MESSAGE NLS unused message: LifecycleMappingPropertyPage_this_message in: org.eclipse.m2e.core.ui.internal.messages
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-05 15:17:12.115
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-05 15:17:17.034
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1

@@ -18,7 +18,18 @@
         <include>org.jmanage:jmanage-alerts</include>
       </includes>
 
-     </moduleSet>
+      <binaries>
+        <outputDirectory>module/${artifactId}</outputDirectory>
+        <unpack>false</unpack>
+
+        <dependencySets>
+          <dependencySet>
+           <outputDirectory>lib</outputDirectory>
+            <unpack>false</unpack>
+          </dependencySet>
+        </dependencySets>
+      </binaries>
+    </moduleSet>
 
     </moduleSets>
  
