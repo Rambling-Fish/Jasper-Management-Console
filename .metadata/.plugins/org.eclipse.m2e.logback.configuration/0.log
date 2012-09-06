@@ -3974,3 +3974,580 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2012-09-05 16:20:39,579 [Worker-191] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean package
 2012-09-05 16:21:33,618 [Worker-191] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
 2012-09-05 16:21:33,645 [Worker-191] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean package
+2012-09-05 23:10:56,807 [Worker-198] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 23:10:56,814 [Worker-198] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-05 23:11:12,546 [Worker-196] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 23:11:12,547 [Worker-196] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2012-09-05 23:17:10,932 [Worker-196] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 23:17:10,933 [Worker-196] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B compile
+2012-09-05 23:18:17,199 [Worker-205] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/main
+2012-09-05 23:18:17,200 [Worker-205] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean package
+2012-09-06 12:36:04,223 [main] ERROR o.e.m.c.u.i.w.MavenProjectWizardArchetypeParametersPage - Error downloading archetype org.apache.maven.archetypes:maven-archetype-quickstart:RELEASE
+java.lang.reflect.InvocationTargetException: null
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:477) ~[org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:372) ~[org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.wizard.WizardDialog.run(WizardDialog.java:1028) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardArchetypeParametersPage.loadArchetypeDescriptor(MavenProjectWizardArchetypeParametersPage.java:386) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardArchetypeParametersPage.setVisible(MavenProjectWizardArchetypeParametersPage.java:524) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1259) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.wizard.WizardDialog.access$4(WizardDialog.java:1238) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.wizard.WizardDialog$8.run(WizardDialog.java:1227) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1225) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardArchetypePage$12.open(MavenProjectWizardArchetypePage.java:413) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:866) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:49) [org.eclipse.ui.workbench_3.103.0.v20120530-1824.jar:na]
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:864) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1152) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1256) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:275) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:269) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:309) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4134) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1458) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1481) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1271) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3980) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3619) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.window.Window.open(Window.java:801) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:117) [org.eclipse.ui.ide_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411) [org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4134) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1458) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1481) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1466) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1271) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3980) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3619) [org.eclipse.swt.cocoa.macosx.x86_64_3.100.0.v4233d.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1022) [org.eclipse.e4.ui.workbench.swt_0.10.1.v20120525-2014.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20120521-2329.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:916) [org.eclipse.e4.ui.workbench.swt_0.10.1.v20120525-2014.jar:na]
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:86) [org.eclipse.e4.ui.workbench_0.10.2.v20120531-1742.jar:na]
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:585) [org.eclipse.ui.workbench_3.103.0.v20120530-1824.jar:na]
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332) [org.eclipse.core.databinding.observable_1.4.1.v20120521-2329.jar:na]
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:540) [org.eclipse.ui.workbench_3.103.0.v20120530-1824.jar:na]
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149) [org.eclipse.ui.workbench_3.103.0.v20120530-1824.jar:na]
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:124) [org.eclipse.ui.ide.application_1.0.400.v20120523-1955.jar:na]
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196) [org.eclipse.equinox.app_1.3.100.v20120522-1841.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110) [org.eclipse.osgi_3.8.0.v20120529-1548.jar:na]
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79) [org.eclipse.osgi_3.8.0.v20120529-1548.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:353) [org.eclipse.osgi_3.8.0.v20120529-1548.jar:na]
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:180) [org.eclipse.osgi_3.8.0.v20120529-1548.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.6.0_33]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) ~[na:1.6.0_33]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) ~[na:1.6.0_33]
+	at java.lang.reflect.Method.invoke(Method.java:597) ~[na:1.6.0_33]
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:629) [org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar:na]
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:584) [org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar:na]
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1438) [org.eclipse.equinox.launcher_1.3.0.v20120522-1813.jar:na]
+Caused by: java.lang.NullPointerException: null
+	at org.sonatype.aether.impl.internal.DefaultMetadataResolver.resolve(DefaultMetadataResolver.java:279) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultMetadataResolver.resolveMetadata(DefaultMetadataResolver.java:173) ~[aether-impl-1.13.1.jar:na]
+	at org.apache.maven.repository.internal.DefaultVersionResolver.resolveVersion(DefaultVersionResolver.java:225) ~[maven-aether-provider-3.0.4.jar:3.0.4]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:272) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:216) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:193) ~[aether-impl-1.13.1.jar:na]
+	at org.sonatype.aether.impl.internal.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:286) ~[aether-impl-1.13.1.jar:na]
+	at org.apache.maven.artifact.resolver.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:213) ~[maven-compat-3.0.4.jar:3.0.4]
+	at org.apache.maven.artifact.resolver.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:157) ~[maven-compat-3.0.4.jar:3.0.4]
+	at org.apache.maven.artifact.resolver.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:525) ~[maven-compat-3.0.4.jar:3.0.4]
+	at org.apache.maven.archetype.downloader.DefaultDownloader.download(DefaultDownloader.java:55) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.common.DefaultArchetypeArtifactManager.getArchetypeFile(DefaultArchetypeArtifactManager.java:98) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.apache.maven.archetype.common.DefaultArchetypeArtifactManager.isFileSetArchetype(DefaultArchetypeArtifactManager.java:227) ~[archetype-common-2.0-alpha-4.jar:2.0-alpha-4]
+	at org.eclipse.m2e.core.ui.internal.wizards.MavenProjectWizardArchetypeParametersPage$9.run(MavenProjectWizardArchetypeParametersPage.java:397) ~[org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:464) ~[org.eclipse.jface_3.8.0.v20120521-2329.jar:na]
+	... 64 common frames omitted
+2012-09-06 12:36:16,565 [Worker-226] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-06 12:36:17,762 [New I/O client worker #1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/maven-metadata.xml
+2012-09-06 12:36:17,766 [New I/O client worker #1-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/apache/maven/archetypes/maven-archetype-quickstart/maven-metadata.xml
+2012-09-06 12:36:18,401 [Worker-226] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' /Users/saadnouri/JManage-Workspace/assembltTest/pom.xml
+2012-09-06 12:36:23,136 [Worker-226] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: jmanage:assembltTest:0.0.1-SNAPSHOT @ /Users/saadnouri/JManage-Workspace/assembltTest/pom.xml.
+2012-09-06 12:36:24,276 [Worker-228] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: jmanage:assembltTest:0.0.1-SNAPSHOT @ /Users/saadnouri/JManage-Workspace/assembltTest/pom.xml.
+2012-09-06 12:36:24,355 [Worker-226] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /assembltTest/src/main/java
+2012-09-06 12:36:24,410 [Worker-226] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /assembltTest/src/test/java
+2012-09-06 12:36:24,960 [Worker-226] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 6 sec
+2012-09-06 12:36:26,244 [Worker-226] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: jmanage:assembltTest:0.0.1-SNAPSHOT @ /Users/saadnouri/JManage-Workspace/assembltTest/pom.xml.
+2012-09-06 12:36:26,368 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:36:26,368 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:36:26,371 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:36:26,372 [Worker-226] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:38:08,391 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:38:08,392 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:38:08,393 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:38:08,394 [Worker-229] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:38:33,885 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:38:33,885 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:38:33,887 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:38:33,887 [Worker-228] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:43:11,735 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:43:11,735 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:43:11,737 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:43:11,737 [Worker-234] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:43:52,823 [Worker-230] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 12:43:52,823 [Worker-230] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2012-09-06 12:44:01,156 [Worker-236] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:44:01,172 [Worker-236] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:44:01,174 [Worker-236] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:44:01,174 [Worker-236] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:44:09,536 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-09-06 12:44:24,537 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-09-06 12:44:34,922 [Worker-235] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 12:44:34,923 [Worker-235] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B compile
+2012-09-06 12:51:53,728 [Worker-242] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: jmanage:assembltTest:0.0.1-SNAPSHOT @ /Users/saadnouri/JManage-Workspace/assembltTest/pom.xml.
+2012-09-06 12:51:53,763 [Worker-242] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-06 12:51:53,957 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.1/commons-cli-1.1.pom
+2012-09-06 12:51:53,959 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.1/commons-cli-1.1.pom
+2012-09-06 12:51:54,039 [Worker-242] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-06 12:51:54,113 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3.pom
+2012-09-06 12:51:54,167 [New I/O client worker #3-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3.pom
+2012-09-06 12:51:54,203 [Worker-242] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-06 12:51:54,265 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.1/commons-cli-1.1.jar
+2012-09-06 12:51:54,287 [New I/O client worker #4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3.jar
+2012-09-06 12:51:54,334 [New I/O client worker #4-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.1/commons-cli-1.1.jar
+2012-09-06 12:51:54,690 [New I/O client worker #4-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3.jar
+2012-09-06 12:51:55,854 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:51:55,854 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:51:55,856 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:51:55,856 [Worker-242] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:51:56,831 [Worker-240] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-06 12:51:56,910 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.1/commons-cli-1.1-sources.jar
+2012-09-06 12:51:56,979 [New I/O client worker #5-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/commons-cli/commons-cli/1.1/commons-cli-1.1-sources.jar
+2012-09-06 12:51:57,014 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:51:57,014 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:51:57,016 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:51:57,016 [Worker-230] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:51:57,100 [Worker-240] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for commons-cli:commons-cli:1.1
+2012-09-06 12:51:57,101 [Worker-240] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-06 12:51:57,166 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3-sources.jar
+2012-09-06 12:51:57,756 [New I/O client worker #6-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.3/commons-lang-2.3-sources.jar
+2012-09-06 12:51:57,837 [Worker-240] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for commons-lang:commons-lang:2.3
+2012-09-06 12:51:58,030 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:51:58,030 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:51:58,033 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:51:58,033 [Worker-244] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:54:38,262 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:54:38,262 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:54:38,264 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:54:38,264 [Worker-243] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:59:23,365 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:59:23,365 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:59:23,366 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:59:23,366 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 12:59:37,281 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:59:37,281 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 12:59:37,283 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 12:59:37,283 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:00:16,514 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:00:16,514 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/main/resources
+2012-09-06 13:00:16,515 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:00:16,515 [Worker-252] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:00:43,661 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:00:43,701 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-09-06 13:00:43,710 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:00:43,710 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:01:05,815 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:01:05,815 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:01:05,816 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:01:05,816 [Worker-249] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:01:26,701 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:01:26,702 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:01:26,704 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:01:26,704 [Worker-253] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:01:44,605 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:01:44,605 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:01:44,608 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:01:44,608 [Worker-251] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:01:50,284 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:01:50,284 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:01:50,286 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:01:50,286 [Worker-248] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:03:21,229 [Worker-257] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: jmanage:assembltTest:0.0.1-SNAPSHOT @ /Users/saadnouri/JManage-Workspace/assembltTest/pom.xml.
+2012-09-06 13:03:21,428 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:03:21,429 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:03:21,430 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:03:21,430 [Worker-257] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:03:40,315 [Worker-258] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: jmanage:assembltTest:0.0.1-SNAPSHOT @ /Users/saadnouri/JManage-Workspace/assembltTest/pom.xml.
+2012-09-06 13:03:40,357 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:03:40,358 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:03:40,360 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:03:40,360 [Worker-258] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:04:00,204 [Worker-262] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: jmanage:assembltTest:0.0.1-SNAPSHOT @ /Users/saadnouri/JManage-Workspace/assembltTest/pom.xml.
+2012-09-06 13:04:00,238 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:04:00,238 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:04:00,239 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:04:00,240 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:04:50,079 [Worker-257] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 13:04:50,079 [Worker-257] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-06 13:04:53,125 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:04:53,167 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-09-06 13:04:53,226 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:04:53,226 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:05:20,299 [Worker-248] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 13:05:20,300 [Worker-248] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:assembly
+2012-09-06 13:05:20,354 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:05:20,356 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:05:20,358 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:05:20,358 [Worker-262] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:07:36,521 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:07:36,634 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:07:36,636 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:07:36,636 [Worker-267] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:07:44,078 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:07:44,378 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:07:44,379 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:07:44,379 [Worker-264] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:07:58,062 [Worker-264] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 13:07:58,190 [Worker-264] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:assembly
+2012-09-06 13:10:22,416 [Worker-268] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 13:10:22,433 [Worker-268] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-06 13:10:25,840 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:10:25,841 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-09-06 13:10:25,881 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:10:25,881 [Worker-268] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:10:38,344 [Worker-273] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 13:10:38,345 [Worker-273] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:assembly
+2012-09-06 13:12:03,456 [Worker-269] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:12:03,473 [Worker-269] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:12:03,475 [Worker-269] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:12:03,521 [Worker-269] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:12:22,244 [Worker-263] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 13:12:22,297 [Worker-263] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:assembly
+2012-09-06 13:15:41,675 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:15:41,675 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-09-06 13:15:41,708 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:15:41,708 [Worker-276] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:16:26,279 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:16:26,280 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:16:26,281 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:16:26,281 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:16:38,085 [Worker-275] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 13:16:38,085 [Worker-275] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:assembly
+2012-09-06 13:17:15,109 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:17:15,110 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-09-06 13:17:15,111 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:17:15,111 [Worker-274] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:26:29,405 [Worker-282] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:26:29,798 [Worker-282] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:26:29,801 [Worker-282] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:26:29,801 [Worker-282] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:27:08,867 [Worker-280] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 13:27:09,001 [Worker-280] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:assembly
+2012-09-06 13:28:55,184 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:28:55,220 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2012-09-06 13:28:55,267 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:28:55,267 [Worker-278] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:31:57,249 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:31:57,265 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:31:57,266 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:31:57,266 [Worker-283] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:33:51,762 [Worker-292] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 13:33:51,772 [Worker-292] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:assembly
+2012-09-06 13:34:56,756 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:34:56,810 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:34:56,813 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:34:56,813 [Worker-289] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembltTest/src/test/resources
+2012-09-06 13:55:57,666 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2012-09-06 13:57:08,524 [Worker-299] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: net.petri.kainulainen.maven:assembly-plugin:0.1 @ /Users/saadnouri/JManage-Workspace/assembly-plugin/pom.xml.
+2012-09-06 13:57:08,564 [Worker-299] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-06 13:57:09,153 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.pom
+2012-09-06 13:57:09,191 [New I/O client worker #7-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.pom
+2012-09-06 13:57:09,248 [Worker-299] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-06 13:57:09,315 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.jar
+2012-09-06 13:57:09,882 [New I/O client worker #8-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16.jar
+2012-09-06 13:57:10,838 [Worker-299] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /assembly-plugin/src/main/java
+2012-09-06 13:57:10,838 [Worker-299] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /assembly-plugin/src/main/resources
+2012-09-06 13:57:10,899 [Worker-299] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /assembly-plugin/src/test/java
+2012-09-06 13:57:11,182 [Worker-304] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: net.petri.kainulainen.maven:assembly-plugin:0.1 @ /Users/saadnouri/JManage-Workspace/assembly-plugin/pom.xml.
+2012-09-06 13:57:11,344 [Worker-299] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 3 sec
+2012-09-06 13:57:11,560 [Worker-302] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-06 13:57:11,613 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar
+2012-09-06 13:57:11,787 [Worker-296] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2012-09-06 13:57:11,787 [Worker-296] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2012-09-06 13:57:12,003 [Worker-296] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: net.petri.kainulainen.maven:assembly-plugin:0.1 @ /Users/saadnouri/JManage-Workspace/assembly-plugin/pom.xml.
+2012-09-06 13:57:12,040 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:57:12,072 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-09-06 13:57:12,074 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:57:12,074 [Worker-296] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-06 13:57:12,172 [New I/O client worker #9-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/log4j/log4j/1.2.16/log4j-1.2.16-sources.jar
+2012-09-06 13:57:12,226 [Worker-302] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for log4j:log4j:1.2.16
+2012-09-06 13:57:12,227 [Worker-302] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for log4j:log4j:1.2.16
+2012-09-06 13:57:13,152 [Worker-302] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:57:13,153 [Worker-302] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:57:13,154 [Worker-302] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:57:13,154 [Worker-302] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-06 13:57:13,292 [Worker-299] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for log4j:log4j:1.2.16
+2012-09-06 13:57:13,318 [Worker-299] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for log4j:log4j:1.2.16
+2012-09-06 13:57:14,162 [Worker-307] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:57:14,162 [Worker-307] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 13:57:14,164 [Worker-307] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 13:57:14,164 [Worker-307] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-06 13:57:29,266 [Worker-305] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration App references closed project assembltTest
+org.eclipse.core.runtime.CoreException: Launch configuration App references closed project assembltTest
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1397) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1269) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:538) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:419) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:316) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+2012-09-06 13:57:29,267 [Worker-305] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration App references closed project assembltTest
+org.eclipse.core.runtime.CoreException: Launch configuration App references closed project assembltTest
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1397) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1269) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setDirty(LaunchConfigurationWorkingCopy.java:538) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.setAttribute(LaunchConfigurationWorkingCopy.java:419) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:317) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+2012-09-06 13:57:29,338 [Worker-305] ERROR o.e.m.j.i.l.MavenLaunchConfigurationListener - Launch configuration App references closed project assembltTest
+org.eclipse.core.runtime.CoreException: Launch configuration App references closed project assembltTest
+	at org.eclipse.jdt.launching.JavaRuntime.abort(JavaRuntime.java:1397) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.jdt.launching.JavaRuntime.getJavaProject(JavaRuntime.java:1269) ~[org.eclipse.jdt.launching_3.6.100.v20120523-1953.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.updateLaunchConfiguration(MavenLaunchConfigurationListener.java:52) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.launchConfigurationChanged(MavenLaunchConfigurationListener.java:37) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.run(LaunchManager.java:228) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager$ConfigurationNotifier.notify(LaunchManager.java:209) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchManager.launchConfigurationChanged(LaunchManager.java:2141) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.writeNewFile(LaunchConfigurationWorkingCopy.java:380) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave0(LaunchConfigurationWorkingCopy.java:246) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:216) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.debug.internal.core.LaunchConfigurationWorkingCopy.doSave(LaunchConfigurationWorkingCopy.java:170) [org.eclipse.debug.core_3.7.100.v20120521-2012.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:318) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenRuntimeClasspathProvider.disable(MavenRuntimeClasspathProvider.java:342) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.jdt.internal.launch.MavenLaunchConfigurationListener.mavenProjectChanged(MavenLaunchConfigurationListener.java:69) [org.eclipse.m2e.jdt_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.notifyProjectChangeListeners(ProjectRegistryManager.java:724) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.applyMutableProjectRegistry(ProjectRegistryManager.java:847) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryRefreshJob.run(ProjectRegistryRefreshJob.java:93) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+2012-09-06 14:03:12,553 [Worker-309] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 14:03:12,554 [Worker-309] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:assembly
+2012-09-06 14:05:18,134 [Worker-316] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 14:05:18,169 [Worker-316] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B single
+2012-09-06 14:05:48,150 [Worker-311] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembly-plugin
+2012-09-06 14:05:48,150 [Worker-311] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-06 14:05:50,153 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 14:05:50,153 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-09-06 14:05:50,159 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 14:05:50,159 [Worker-317] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-06 14:06:52,290 [Worker-311] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembltTest
+2012-09-06 14:06:52,290 [Worker-311] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single
+2012-09-06 14:07:50,212 [Worker-319] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembly-plugin
+2012-09-06 14:07:50,354 [Worker-319] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-06 14:07:52,896 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 14:07:52,897 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-09-06 14:07:52,925 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 14:07:52,925 [Worker-315] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-06 14:09:32,909 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-09-06 14:09:42,724 [Worker-317] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembly-plugin
+2012-09-06 14:09:42,724 [Worker-317] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single
+2012-09-06 14:10:43,602 [Worker-320] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 14:10:43,625 [Worker-320] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 14:10:43,626 [Worker-320] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 14:10:43,626 [Worker-320] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-06 14:10:51,857 [Worker-315] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembly-plugin
+2012-09-06 14:10:51,857 [Worker-315] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-06 14:10:54,184 [Worker-320] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 14:10:54,185 [Worker-320] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-09-06 14:10:54,187 [Worker-320] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 14:10:54,187 [Worker-320] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-06 14:11:04,171 [Worker-323] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembly-plugin
+2012-09-06 14:11:04,171 [Worker-323] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single
+2012-09-06 14:12:58,061 [Worker-325] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembly-plugin
+2012-09-06 14:12:58,078 [Worker-325] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single
+2012-09-06 14:14:51,228 [Worker-324] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/main/pom.xml.
+2012-09-06 14:15:29,234 [Worker-332] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-06 14:15:31,247 [Worker-328] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-06 14:15:32,036 [Worker-329] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-06 14:53:25,570 [Worker-340] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-06 14:57:13,861 [Worker-341] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-06 15:26:12,242 [Worker-351] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-06 15:26:27,282 [Worker-341] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1092) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1163) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-06 15:26:28,952 [Worker-353] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1092) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1163) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-06 15:26:42,894 [Worker-349] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1092) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1163) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-06 15:26:42,901 [Worker-348] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11)  @ line 59, column 11
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11)  @ line 59, column 11
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:149) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:102) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:584) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:746) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:167) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:70) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:276) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:743) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$6.run(MavenPomEditor.java:1064) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11)  @ line 59, column 11
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:195) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:499) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:261) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:232) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:142) ~[maven-core-3.0.4.jar:3.0.4]
+	... 9 common frames omitted
+2012-09-06 15:27:16,851 [Worker-341] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-06 15:28:10,677 [Worker-352] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 15:28:10,678 [Worker-352] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2012-09-06 15:28:10,685 [Worker-352] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-06 15:28:10,685 [Worker-352] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-06 15:33:52,053 [Worker-350] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage/tools
+2012-09-06 15:33:52,053 [Worker-350] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-06 15:34:19,378 [Worker-358] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage/tools
+2012-09-06 15:34:19,417 [Worker-358] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B install
+2012-09-06 15:35:02,771 [Worker-350] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/assembly-plugin
+2012-09-06 15:35:02,786 [Worker-350] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single
+2012-09-06 15:36:14,763 [Worker-352] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-06 15:36:14,763 [Worker-352] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single
+2012-09-06 15:37:53,094 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2012-09-06 15:37:53,105 [Worker-355] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-06 15:37:53,105 [Worker-355] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single
+2012-09-06 15:38:47,661 [Worker-350] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-06 15:39:02,109 [Worker-361] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-06 15:39:02,114 [Worker-361] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single
+2012-09-06 15:41:33,458 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2012-09-06 15:41:33,470 [Worker-365] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-06 15:41:33,470 [Worker-365] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single
+2012-09-06 15:50:03,579 [Worker-367] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-06 15:50:03,613 [Worker-367] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-06 15:50:44,989 [Worker-372] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-06 15:50:44,990 [Worker-372] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:single

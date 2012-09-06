@@ -1,13 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="internal" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.editor.dialogs.ManageDependenciesDialog">
+		<item value="450" key="height"/>
+		<item value="605" key="width"/>
+		<item value="154" key="y"/>
+		<item value="2278" key="x"/>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="450" key="height"/>
+		<item value="480" key="width"/>
+		<item value="265" key="y"/>
+		<item value="2418" key="x"/>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/Users/saadnouri/JManage-Workspace"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="groupId">
+		</list>
+		<list key="package">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.LocalArchetypeCatalogDialog">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.MavenProjectSelectionDialog">
+		<item value="450" key="height"/>
+		<item value="480" key="width"/>
+		<item value="84" key="y"/>
+		<item value="917" key="x"/>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
 	<section name="org.eclipse.m2e.core.ui.internal.dialogs.EditDependencyDialog">
 		<item value="450" key="height"/>
 		<item value="480" key="width"/>
 		<item value="154" key="y"/>
 		<item value="2340" key="x"/>
 	</section>
-	<section name="MavenProjectWizardArchetypePage">
-		<item value="internal" key="catalog"/>
+	<section name="MavenCheckoutLocationPage">
+		<list key="scmUrl">
+		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -28,20 +107,8 @@
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
-	<section name="org.eclipse.m2e.editor.dialogs.ManageDependenciesDialog">
-		<item value="450" key="height"/>
-		<item value="605" key="width"/>
-		<item value="154" key="y"/>
-		<item value="2278" key="x"/>
-	</section>
-	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
-		<item value="450" key="height"/>
-		<item value="480" key="width"/>
-		<item value="127" key="y"/>
-		<item value="2506" key="x"/>
-	</section>
-	<section name="MavenProjectWizardLocationPage">
-		<list key="location">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
 			<item value="/Users/saadnouri/JManage-Workspace"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -51,38 +118,6 @@
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
 		</list>
-	</section>
-	<section name="Maven2ProjectWizardArchifactPage">
-		<list key="groupId">
-			<item value="jmanage"/>
-			<item value="jmanage-client"/>
-		</list>
-		<list key="package">
-			<item value="org.jmanage.client"/>
-			<item value="org."/>
-		</list>
-		<list key="artifactId">
-			<item value="client"/>
-			<item value="jmanage-client"/>
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-		</list>
-		<list key="version">
-			<item value="1.0"/>
-		</list>
-	</section>
-	<section name="org.eclipse.m2e.core.ui.internal.preferences.LocalArchetypeCatalogDialog">
-	</section>
-	<section name="org.eclipse.m2e.core.ui.internal.wizards.MavenProjectSelectionDialog">
-		<item value="450" key="height"/>
-		<item value="480" key="width"/>
-		<item value="84" key="y"/>
-		<item value="917" key="x"/>
 	</section>
 	<section name="MavenModuleWizardParentPage">
 		<list key="moduleName">
@@ -108,27 +143,6 @@
 			<item value="[artifactId]-[version]"/>
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
-		</list>
-	</section>
-	<section name="MavenProjectWizardArtifactPage">
-		<list key="groupId">
-			<item value="jmanage"/>
-		</list>
-		<list key="name">
-		</list>
-		<list key="artifactId">
-			<item value="client"/>
-			<item value="main"/>
-		</list>
-		<list key="projectNameTemplate">
-			<item value="[artifactId]"/>
-			<item value="[artifactId]-TRUNK"/>
-			<item value="[artifactId]-[version]"/>
-			<item value="[groupId].[artifactId]"/>
-			<item value="[groupId].[artifactId]-[version]"/>
-		</list>
-		<list key="version">
-			<item value="1.0"/>
 		</list>
 	</section>
 </section>

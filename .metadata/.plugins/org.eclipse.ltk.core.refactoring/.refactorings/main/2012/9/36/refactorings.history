@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;main/src/assemble/exe.xml&apos; to &apos;exe_old.xml&apos;" description="Rename resource &apos;exe.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/assemble/exe.xml" name="exe_old.xml" stamp="1346872381797" updateReferences="true"/>
-</session>
