@@ -1,0 +1,72 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+  <id>bin</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>false</includeBaseDirectory>
+ 
+ <!--  Add the JManage module sets 
+  <moduleSets>
+    <moduleSet>
+    Enable access to all projects in the current multimodule build! 
+      <useAllReactorProjects>true</useAllReactorProjects>
+      
+      Now, select which projects to include in this module-set.
+      <includes>
+        <include>${groupId:artifactId}</include>        
+      </includes>
+     </moduleSet>
+    </moduleSets> -->
+ 
+  <dependencySets>
+        <dependencySet>
+            <!--
+                Project artifact is not copied under library directory since
+                it is added to the root directory of the zip package.
+            -->
+            <useProjectArtifact>true</useProjectArtifact>
+            <outputDirectory>lib</outputDirectory>
+            <unpack>false</unpack>
+        </dependencySet>
+    </dependencySets>
+
+    <fileSets>
+        <!--
+            Adds startup scripts to the root directory of zip package. The startup
+            scripts are located to src/main/scripts directory as stated by Maven
+            conventions.
+        -->
+        <fileSet>
+        	<directory>${project.basedir}/thirdparty/</directory>
+        	<outputDirectory>lib</outputDirectory>  
+        	 
+          </fileSet>
+        <fileSet>
+            <directory>${project.basedir}/config/src/main/config</directory>
+            <outputDirectory>config</outputDirectory>
+        </fileSet>
+         <fileSet>
+            <directory>${project.basedir}/webui/src/main/dashboards</directory>
+            <outputDirectory>dashboards</outputDirectory>
+        </fileSet>
+          <fileSet>
+            <directory>${project.basedir}/tools/bin</directory>
+            <outputDirectory>bin</outputDirectory>
+        </fileSet>
+        <!-- adds jar package to the root directory of zip package -->
+        <fileSet>
+            <directory>${project.build.directory}</directory>
+            <outputDirectory></outputDirectory>
+            <includes>
+                <include>*.jar</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+ 
+ 
+</assembly>
+
+
+<!--  Ref: http://maven.apache.org/plugins/maven-assembly-plugin/examples/multimodule/module-binary-inclusion-simple.html -->

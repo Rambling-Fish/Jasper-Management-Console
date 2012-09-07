@@ -56,7 +56,8 @@
                     </descriptors>
                 </configuration>
             </plugin>
-            </plugins>
+               <!-- The configuration of maven-jar-plugin -->
+             </plugins>
             </build>
             
  </project>

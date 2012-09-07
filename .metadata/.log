@@ -565,3 +565,22 @@ org.eclipse.swt.SWTException: Widget is disposed
 !MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model
 [FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </project> must be the same as start tag <plugins> from line 45 (position: TEXT seen ...</configuration>\n            </plugin>\n</project>... @59:11)  @ line 59, column 11
  for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+!SESSION 2012-09-07 09:45:00.869 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_35
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/saadnouri/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/saadnouri/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2012-09-07 09:47:15.762
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 2 2 2012-09-07 12:21:42.905
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.jst.jsp.ui, propertyPage: org.eclipse.jst.jsp.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.ui 2 2 2012-09-07 12:21:42.925
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.html.ui, propertyPage: org.eclipse.wst.html.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.ui 2 2 2012-09-07 12:21:42.925
+!MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)

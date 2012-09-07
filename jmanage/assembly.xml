@@ -15,18 +15,8 @@
       
       Now, select which projects to include in this module-set.
       <includes>
-        <include>jmanage:jmanage-alerts</include>
-        <include>jmanage:jmanage-auth</include>
-        <include>jmanage:jmanage-cmdui</include>
-        <include>jmanage:jmanage-config</include>
-        <include>jmanage:jmanage-connector</include>
-        <include>jmanage:jmanage-crypto</include>
-        <include>jmanage:jmanage-managment</include>
-        <include>jmanage:jmanage-services/include>
-        <include>jmanage:jmanage-tools</include>
-        <include>jmanage:jmanage-utils</include>
+        <include>${groupId:artifactId}</include>        
       </includes>
-
      </moduleSet>
     </moduleSets> -->
  
@@ -36,7 +26,7 @@
                 Project artifact is not copied under library directory since
                 it is added to the root directory of the zip package.
             -->
-            <useProjectArtifact>false</useProjectArtifact>
+            <useProjectArtifact>true</useProjectArtifact>
             <outputDirectory>lib</outputDirectory>
             <unpack>false</unpack>
         </dependencySet>
@@ -49,8 +39,81 @@
             conventions.
         -->
         <fileSet>
+        	<directory>${project.basedir}/thirdparty/hsqldb</directory>
+        	<outputDirectory></outputDirectory>  
+        	  <includes>
+                <include>**/*.jar</include>
+            </includes>
+          </fileSet>
+           <fileSet>
+        	<directory>${project.basedir}/thirdparty/commons-modeler</directory>
+        	<outputDirectory></outputDirectory>  
+        	  <includes>
+                <include>**/*.jar</include>
+            </includes>
+          </fileSet>
+            <fileSet>
+        	<directory>${project.basedir}/thirdparty/jdom</directory>
+        	<outputDirectory></outputDirectory>  
+        	  <includes>
+                <include>**/*.jar</include>
+            </includes>
+          </fileSet>
+            <fileSet>
+        	<directory>${project.basedir}/thirdparty/jetty</directory>
+        	<outputDirectory></outputDirectory>  
+        	  <includes>
+                <include>**/*.jar</include>
+            </includes>
+          </fileSet>
+            <fileSet>
+        	<directory>${project.basedir}/thirdparty/jmxri</directory>
+        	<outputDirectory></outputDirectory>  
+        	  <includes>
+                <include>**/*.jar</include>
+            </includes>
+          </fileSet>
+            <fileSet>
+        	<directory>${project.basedir}/thirdparty/jsr77</directory>
+        	<outputDirectory></outputDirectory>  
+        	  <includes>
+                <include>**/*.jar</include>
+            </includes>
+          </fileSet>
+            <fileSet>
+        	<directory>${project.basedir}/thirdparty/jstl</directory>
+        	<outputDirectory></outputDirectory>  
+        	  <includes>
+                <include>**/*.jar</include>
+            </includes>
+          </fileSet>
+            <fileSet>
+        	<directory>${project.basedir}/thirdparty/mail</directory>
+        	<outputDirectory></outputDirectory>  
+        	  <includes>
+                <include>**/*.jar</include>
+            </includes>
+          </fileSet>
+            <fileSet>
+        	<directory>${project.basedir}/thirdparty/snmp</directory>
+        	<outputDirectory></outputDirectory>  
+        	  <includes>
+                <include>**/*.jar</include>
+            </includes>
+          </fileSet>
+        <!--  copy config files --> 
+        <fileSet>
             <directory>${project.basedir}/config/src/main/config</directory>
             <outputDirectory>config</outputDirectory>
+        </fileSet>
+        <fileSet>
+            <directory>${project.basedir}/management/src/main/config</directory>
+            <outputDirectory>config</outputDirectory>
+        </fileSet>
+        <!--  copy components jars to lib -->
+         <fileSet>
+        	<directory>${project.basedir}/</directory>
+        	<outputDirectory>lib</outputDirectory>  
         </fileSet>
          <fileSet>
             <directory>${project.basedir}/webui/src/main/dashboards</directory>

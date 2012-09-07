@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=auth,cmdui,config,connector,crypto,main,management,services,tools,utils,jManage
+task-tag-projects-already-scanned=auth,cmdui,config,connector,crypto,management,services,tools,utils,assembltTest,assembly-plugin,jmanage
