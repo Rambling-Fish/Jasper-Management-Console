@@ -1,0 +1,16 @@
+Create and import jamange code to Maven 3.4- Using Eclipse M2e plugin
+1. create a simple project in maven
+2. add jamange modules to the parent project POM.xml
+3. add module dependencies in the module POM.xml - you can find each module dependencies inside project.xml file
+4. enable assembly plugin and add assembly.xml file
+5. enable dependency plugin
+6. enable resources plugin
+
+
+Build instructions for the JManage in Maven 3.4- Using Eclipse M2e plugin
+1. To generate the modules archives with dependencies run the following maven command: 
+mvn clean dependency:copy-dependencies package, this will compile the multiple projects and produce required jar files and dependency jars
+2. TO generate the final assembly run the following command: 
+mvn assembly:assembly
+
+3. Always run mvn clean to make sure we have a clean directory etc. 
