@@ -5567,3 +5567,11 @@ Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was
 2012-09-10 16:04:01,344 [Worker-231] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
 2012-09-10 16:04:01,345 [Worker-231] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
 2012-09-10 16:04:23,401 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-11 15:41:32,532 [Worker-246] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-11 15:41:32,754 [Worker-246] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-11 15:44:06,483 [Worker-247] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-11 15:44:06,496 [Worker-247] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-11 15:44:41,809 [Worker-251] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-11 15:44:41,809 [Worker-251] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-11 15:48:10,341 [Worker-254] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-11 15:48:10,357 [Worker-254] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B assembly:assembly
