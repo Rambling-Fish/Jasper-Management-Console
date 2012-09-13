@@ -1,13 +1,13 @@
 <project name="jManage" default="compile" basedir=".">
 
-    <property name="web.home" value="${basedir}/src/main/webapp"/>
+    <property name="web.home" value="${basedir}/webui/src/main/webapp"/>
 
     <property name="compile.debug" value="true"/>
     <property name="compile.deprecation" value="false"/>
     <property name="compile.optimize" value="true"/>
 
     <path id="web.compile.classpath">
-        <fileset dir="${basedir}/lib_old">
+        <fileset dir="${basedir}/lib">
             <include name="*.jar"/>
         </fileset>
         <fileset dir="${basedir}/web/WEB-INF/lib">
@@ -24,7 +24,7 @@
         description="Compile Java sources">
 
 		<!-- Compile web Java classes as necessary -->
-        <javac srcdir="${basedir}/src/main/java"
+        <javac srcdir="${basedir}/webui/src/main/java"
             destdir="${basedir}/web/WEB-INF/classes"
             debug="${compile.debug}"
             deprecation="${compile.deprecation}"
@@ -62,7 +62,7 @@
 
     <target name="prepare">
 
-        <mkdir dir="${basedir}/lib"/>
+        <mkdir dir="${basedir}/lib2"/>
         <mkdir dir="${basedir}/web"/>
         <mkdir dir="${basedir}/web/WEB-INF"/>
         <mkdir dir="${basedir}/web/WEB-INF/classes"/>
@@ -81,12 +81,12 @@
 		<echo message="${expand.temp.property}" file="${basedir}/web/common/footer.jsp"/>
 
         <copy todir="${basedir}/web/WEB-INF/lib">
-            <fileset dir="${basedir}/../thirdparty/struts/lib">
+            <fileset dir="${basedir}/thirdparty/struts/lib">
                 <include name="*.jar"/>
                 <exclude name="commons-beanutils.jar"/>
                 <exclude name="commons-logging.jar"/>
             </fileset>
-            <fileset dir="${basedir}/../thirdparty/jfreechart/lib">
+            <fileset dir="${basedir}/thirdparty/jfreechart/lib">
                 <include name="*.jar"/>
             </fileset>
         </copy>
