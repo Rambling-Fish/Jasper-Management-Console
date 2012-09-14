@@ -2016,3 +2016,126 @@ org.eclipse.osgi.framework.internal.core.AbstractBundle$BundleStatusException
 
 !ENTRY org.eclipse.ui 2 2 2012-09-14 12:25:02.741
 !MESSAGE Invalid property category path: ValidationPropertiesPage (bundle: org.eclipse.wst.xml.ui, propertyPage: org.eclipse.wst.xml.ui.propertyPage.project.validation)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:25:10.535
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:25:33.513
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: input contained no data @ 
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:42:49.423
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:42:50.653
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:43:28.321
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 84 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @84:84)  @ line 84, column 84
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:43:28.435
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:43:41.517
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:43:42.737
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:43:44.710
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86)  @ line 91, column 86
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:43:44.819
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:43:49.146
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86)  @ line 91, column 86
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:43:49.250
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:01.466
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:02.746
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:05.664
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83)  @ line 97, column 83
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:05.776
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:09.073
+!MESSAGE Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83)  @ line 97, column 83
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:09.178
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:17.860
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:19.012
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:26.837
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 13:44:27.991
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 15:31:26.583
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 15:31:45.215
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 15:52:41.268
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 15:52:42.517
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 15:58:12.803
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 15:58:30.735
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 15:58:42.467
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 15:59:28.663
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 16:01:23.177
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 16:01:32.632
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 16:01:50.372
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 16:02:25.109
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-09-14 16:03:51.900
+!MESSAGE The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 16:09:58.921
+!MESSAGE Could not read pom.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-09-14 16:10:00.257
+!MESSAGE Could not read pom.xml

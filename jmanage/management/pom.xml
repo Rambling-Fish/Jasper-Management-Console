@@ -12,7 +12,9 @@
   <version>1.0</version>
   <name>jmanage-management</name>
   <url>http://maven.apache.org</url>
+  
   <properties>
+    <main.basedir>${project.parent.basedir}</main.basedir>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>

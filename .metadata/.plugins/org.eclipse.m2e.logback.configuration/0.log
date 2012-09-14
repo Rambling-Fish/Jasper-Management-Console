@@ -5866,3 +5866,1073 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment 
 2012-09-14 12:24:59,660 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
 2012-09-14 12:25:07,632 [Worker-61] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
 2012-09-14 12:25:07,632 [Worker-61] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-14 12:36:48,110 [Worker-64] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:39:15,888 [Worker-66] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 12:39:15,902 [Worker-66] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 12:48:12,979 [Worker-79] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 12:48:12,993 [Worker-79] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-14 12:59:35,970 [Worker-100] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 12:59:35,971 [Worker-100] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:05:10,359 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-09-14 13:05:24,145 [Worker-101] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:05:24,146 [Worker-101] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:06:33,861 [Worker-101] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:06:33,899 [Worker-101] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:08:10,820 [Worker-111] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:08:10,820 [Worker-111] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:11:37,797 [Worker-101] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:11:37,835 [Worker-101] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:12:10,354 [Worker-122] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:12:10,354 [Worker-122] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:16:16,993 [Worker-130] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:16:17,015 [Worker-130] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:22:23,422 [Worker-125] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:22:23,462 [Worker-125] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2012-09-14 13:22:54,781 [Worker-141] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:22:54,781 [Worker-141] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B compile
+2012-09-14 13:24:16,585 [Worker-135] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:24:16,625 [Worker-135] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:25:10,535 [Worker-143] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: java.io.EOFException: input contained no data
+	at org.codehaus.plexus.util.xml.pull.MXParser.fillBuf(MXParser.java:3005) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.more(MXParser.java:3048) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseProlog(MXParser.java:1422) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1407) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4092) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+2012-09-14 13:25:33,513 [Worker-145] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: input contained no data @ 
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: input contained no data @ 
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:149) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:102) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:584) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:746) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:167) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:70) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:276) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:743) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$6.run(MavenPomEditor.java:1064) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-readable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: input contained no data @ 
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:195) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:517) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:261) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:232) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:142) ~[maven-core-3.0.4.jar:3.0.4]
+	... 9 common frames omitted
+2012-09-14 13:25:40,504 [Worker-142] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:26:20,704 [Worker-125] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:27:41,699 [Worker-148] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:27:41,699 [Worker-148] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:28:24,602 [Worker-145] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:29:30,765 [Worker-150] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:29:38,585 [Worker-148] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:29:38,585 [Worker-148] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:40:00,316 [Worker-159] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:40:15,747 [Worker-156] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:40:27,795 [Worker-162] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:40:27,796 [Worker-162] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:42:34,880 [Worker-163] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:42:49,423 [Worker-160] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpath> must be the same as start tag <targetPath> from line 77 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @77:84) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpath> must be the same as start tag <targetPath> from line 77 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @77:84) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:42:50,653 [Worker-166] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpath> must be the same as start tag <targetPath> from line 77 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @77:84) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpath> must be the same as start tag <targetPath> from line 77 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @77:84) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:43:28,321 [Worker-161] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 84 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @84:84)  @ line 84, column 84
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 84 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @84:84)  @ line 84, column 84
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:149) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:102) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:584) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:746) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:167) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:70) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:276) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:743) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$6.run(MavenPomEditor.java:1064) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 84 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @84:84)  @ line 84, column 84
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:195) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:499) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:261) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:232) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:142) ~[maven-core-3.0.4.jar:3.0.4]
+	... 9 common frames omitted
+2012-09-14 13:43:28,434 [Worker-156] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpath> must be the same as start tag <targetPath> from line 84 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @84:84) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpath> must be the same as start tag <targetPath> from line 84 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/lib</targetpath>... @84:84) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:43:34,812 [Worker-156] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:43:41,517 [Worker-166] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 90 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @92:29) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 90 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @92:29) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:43:42,737 [Worker-163] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 90 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @92:29) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 90 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @92:29) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:43:44,709 [Worker-164] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86)  @ line 91, column 86
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86)  @ line 91, column 86
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:149) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:102) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:584) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:746) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:167) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:70) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:276) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:743) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$6.run(MavenPomEditor.java:1064) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86)  @ line 91, column 86
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:195) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:499) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:261) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:232) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:142) ~[maven-core-3.0.4.jar:3.0.4]
+	... 9 common frames omitted
+2012-09-14 13:43:44,819 [Worker-161] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:43:49,146 [Worker-166] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86)  @ line 91, column 86
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86)  @ line 91, column 86
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:149) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:102) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:584) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:746) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:167) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:70) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:276) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:743) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$6.run(MavenPomEditor.java:1064) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86)  @ line 91, column 86
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:195) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:499) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:261) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:232) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:142) ~[maven-core-3.0.4.jar:3.0.4]
+	... 9 common frames omitted
+2012-09-14 13:43:49,250 [Worker-158] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetPath> must be the same as start tag <targetpath> from line 91 (position: TEXT seen ...tpath>${project.prarent.build.outputDirectory}/config</targetPath>... @91:86) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:43:55,684 [Worker-156] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:44:01,466 [Worker-163] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 96 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @98:29) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 96 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @98:29) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:44:02,746 [Worker-160] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 96 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @98:29) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 96 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @98:29) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:44:05,664 [Worker-158] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83)  @ line 97, column 83
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83)  @ line 97, column 83
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:149) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:102) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:584) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:746) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:167) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:70) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:276) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:743) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$6.run(MavenPomEditor.java:1064) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83)  @ line 97, column 83
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:195) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:499) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:261) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:232) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:142) ~[maven-core-3.0.4.jar:3.0.4]
+	... 9 common frames omitted
+2012-09-14 13:44:05,776 [Worker-161] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:44:09,072 [Worker-166] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83)  @ line 97, column 83
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+org.apache.maven.project.ProjectBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83)  @ line 97, column 83
+ for project  at /Users/saadnouri/JManage-Workspace/jmanage/pom.xml
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:149) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:102) ~[maven-core-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readProject(MavenImpl.java:584) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectWithDependencies(ProjectRegistryManager.java:746) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:167) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:70) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:276) [org.eclipse.m2e.core.ui_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:743) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$6.run(MavenPomEditor.java:1064) [org.eclipse.m2e.editor_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.building.ModelBuildingException: 1 problem was encountered while building the effective model
+[FATAL] Non-parseable POM /Users/saadnouri/JManage-Workspace/jmanage/pom.xml: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83)  @ line 97, column 83
+
+	at org.apache.maven.model.building.DefaultModelProblemCollector.newModelBuildingException(DefaultModelProblemCollector.java:195) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.readModel(DefaultModelBuilder.java:499) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:261) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.building.DefaultModelBuilder.build(DefaultModelBuilder.java:232) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.project.DefaultProjectBuilder.build(DefaultProjectBuilder.java:142) ~[maven-core-3.0.4.jar:3.0.4]
+	... 9 common frames omitted
+2012-09-14 13:44:09,178 [Worker-162] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpath> must be the same as start tag <targetPath> from line 97 (position: TEXT seen ...rgetPath>${project.prarent.build.outputDirectory}/bin</targetpath>... @97:83) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:44:12,612 [Worker-156] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:44:17,859 [Worker-158] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 102 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @104:29) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 102 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @104:29) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:44:19,011 [Worker-161] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 102 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @104:29) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpaths> must be the same as start tag <targetPaths> from line 102 (position: TEXT seen ...</targetpath>\n             \t</targetpaths>... @104:29) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:44:20,867 [Worker-160] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:44:26,837 [Worker-160] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetPath> must be the same as start tag <targetpath> from line 103 (position: TEXT seen ...h>${project.prarent.build.outputDirectory}/dashboards</targetPath>... @103:90) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetPath> must be the same as start tag <targetpath> from line 103 (position: TEXT seen ...h>${project.prarent.build.outputDirectory}/dashboards</targetPath>... @103:90) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:44:27,991 [Worker-162] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetPath> must be the same as start tag <targetpath> from line 103 (position: TEXT seen ...h>${project.prarent.build.outputDirectory}/dashboards</targetPath>... @103:90) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetPath> must be the same as start tag <targetpath> from line 103 (position: TEXT seen ...h>${project.prarent.build.outputDirectory}/dashboards</targetPath>... @103:90) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 13:44:30,632 [Worker-162] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 13:44:43,778 [Worker-165] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:44:43,778 [Worker-165] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:45:38,312 [Worker-160] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 13:45:38,312 [Worker-160] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 13:45:38,449 [Worker-156] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 14:57:50,170 [Worker-162] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-14 14:57:50,823 [New I/O client worker #2-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/sonatype/sisu/sisu-inject-plexus/2.1.1/sisu-inject-plexus-2.1.1-sources.jar
+2012-09-14 14:58:48,015 [Worker-162] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 14:58:55,903 [Worker-168] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 14:58:55,903 [Worker-168] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 14:59:46,232 [Worker-170] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:00:12,231 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2012-09-14 15:00:17,209 [Worker-168] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:00:17,209 [Worker-168] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B 
+2012-09-14 15:00:32,292 [Worker-174] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:00:32,292 [Worker-174] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:11:57,584 [Worker-177] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:12:18,619 [Worker-176] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:12:31,143 [Worker-180] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:12:31,144 [Worker-180] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:14:20,566 [Worker-183] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:14:47,687 [Worker-181] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:14:47,687 [Worker-181] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:16:52,446 [Worker-185] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:17:04,164 [Worker-184] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:17:04,164 [Worker-184] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:30:41,070 [Worker-187] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:30:51,777 [Worker-187] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:31:26,583 [Worker-193] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 15:31:45,215 [Worker-195] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 15:32:16,219 [Worker-195] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:32:22,739 [Worker-195] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:32:22,739 [Worker-195] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:38:17,041 [Worker-198] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:38:17,051 [Worker-198] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:41:32,796 [Worker-202] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:41:32,819 [Worker-202] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:41:32,969 [Worker-187] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:41:58,340 [Worker-206] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:42:18,712 [Worker-208] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:42:32,605 [Worker-209] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:42:32,605 [Worker-209] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:45:21,929 [Worker-215] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:47:09,059 [Worker-221] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:47:45,749 [Worker-215] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:48:03,109 [Worker-215] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:48:11,751 [Worker-220] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:48:11,751 [Worker-220] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:52:33,405 [Worker-219] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:52:41,268 [Worker-226] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </eeclude> must be the same as start tag <exclude> from line 79 (position: TEXT seen ...<exclude>${basedir}/target/**</eeclude>... @79:55) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </eeclude> must be the same as start tag <exclude> from line 79 (position: TEXT seen ...<exclude>${basedir}/target/**</eeclude>... @79:55) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 15:52:42,517 [Worker-222] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </eeclude> must be the same as start tag <exclude> from line 79 (position: TEXT seen ...<exclude>${basedir}/target/**</eeclude>... @79:55) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </eeclude> must be the same as start tag <exclude> from line 79 (position: TEXT seen ...<exclude>${basedir}/target/**</eeclude>... @79:55) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 15:53:05,020 [Worker-229] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:53:14,461 [Worker-226] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:53:14,461 [Worker-226] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:56:31,004 [Worker-227] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 15:56:57,771 [Worker-232] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:56:57,771 [Worker-232] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:58:12,803 [Worker-234] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 15:58:30,735 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 15:58:42,467 [Worker-227] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 15:59:28,348 [Worker-236] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 15:59:28,348 [Worker-236] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 15:59:28,662 [Worker-222] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 16:01:23,177 [Worker-242] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 16:01:32,632 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 16:01:50,372 [Worker-238] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 16:02:25,108 [Worker-231] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 16:03:51,900 [Worker-244] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact jdom:jdom:jar:1.1 has been relocated to org.jdom:jdom:jar:1.1
+2012-09-14 16:04:28,117 [Worker-245] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 16:04:28,118 [Worker-245] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 16:07:27,794 [Worker-242] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 16:07:55,425 [Worker-248] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 16:08:10,425 [Worker-247] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 16:08:31,172 [Worker-248] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 16:08:35,797 [Worker-247] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 16:08:45,205 [Worker-242] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 16:08:45,206 [Worker-242] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 16:09:15,779 [Worker-250] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 16:09:23,787 [Worker-248] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 16:09:23,787 [Worker-248] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-14 16:09:44,935 [Worker-245] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 16:09:58,920 [Worker-249] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpath> must be the same as start tag <targetPath> from line 95 (position: TEXT seen ...<targetPath>bin</targetpath>... @95:42) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpath> must be the same as start tag <targetPath> from line 95 (position: TEXT seen ...<targetPath>bin</targetpath>... @95:42) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 16:10:00,256 [Worker-251] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: end tag name </targetpath> must be the same as start tag <targetPath> from line 95 (position: TEXT seen ...<targetPath>bin</targetpath>... @95:42) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag name </targetpath> must be the same as start tag <targetPath> from line 95 (position: TEXT seen ...<targetPath>bin</targetpath>... @95:42) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseEndTag(MXParser.java:1708) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1143) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:179) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.Xpp3DomBuilder.build(Xpp3DomBuilder.java:86) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePluginExecution(MavenXpp3Reader.java:3137) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parsePlugin(MavenXpp3Reader.java:2918) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseBuild(MavenXpp3Reader.java:1167) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2456) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 16:10:04,800 [Worker-251] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 16:10:12,568 [Worker-248] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 16:10:21,447 [Worker-252] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 16:10:21,981 [Worker-252] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package

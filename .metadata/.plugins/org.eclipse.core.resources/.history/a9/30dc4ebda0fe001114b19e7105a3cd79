@@ -1,0 +1,114 @@
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!-- Jasper Management Console Parent POM file					   -->
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>jmanage</groupId>
+  <artifactId>main</artifactId>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  Final Package name jasper_console or something				 -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <name>jasper_console</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!--  include the children projects for JManage components jars    -->
+  <!--  then and solve their dependencies modules are: 				 -->
+  <!--  alerts, utils, cmdui,crypto,config, services, management, 	 -->
+  <!--  connector, and tools     									 -->
+  <!--  the rest of the modules are using ant build script for       -->
+  <!--  building so we are using "antrun" plugin to compile them     -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <modules>
+  	<module>auth</module>
+  	<module>alerts</module>
+  	<module>cmdui</module>
+  	<module>config</module>
+  	<module>crypto</module>
+  	<module>services</module>
+  	<module>utils</module>
+  	<module>management</module>
+  	<module>connector</module>
+  	<module>tools</module>  	
+  </modules>
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <build>
+   <plugins>
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- copying jars and dependencies into /lib directory   		  -->
+   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <plugin>
+     <groupId>org.apache.maven.plugins</groupId>
+     <artifactId>maven-resources-plugin</artifactId>
+     <version>2.6</version>
+     <executions>
+       <execution>
+         <id>copy-resources</id>
+         <!-- here the phase you need -->
+         <phase>package</phase>
+         <goals>
+           <goal>copy-resources</goal>
+         </goals>
+         <configuration>
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <!--                  Output "main" directory 		  			 -->
+          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+          <outputDirectory>${project.prarent.basedir}/lib</outputDirectory>
+          <resources>          
+             <resource> <!--  components jars -->
+<!--               <targetPath>${project.prarent.build.outputDirectory}/lib</targetPath> -->
+              <directory>target</directory>
+               <includes>
+               <include>*.jar</include></includes>
+             </resource>
+              <resource> <!-- Add dependencies jars to /lib -->
+<!--               <targetPath>${project.prarent.build.outputDirectory}/lib</targetPath> -->
+               <directory>target/dependency</directory>
+               <includes>
+               <include>*.jar</include></includes>
+             </resource>
+            </resources>              
+         </configuration>            
+       </execution>
+     </executions>
+    </plugin>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Execute ANT scripts for Modules, Client and Startup jar       -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Produce jasper_console package archive    					 -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <version>2.2.2</version>
+              <!-- The configuration of the plugin -->
+              <configuration>
+                  <!-- Specifies the configuration file of the assembly plugin -->
+                  <descriptors>
+                      <descriptor>assembly.xml</descriptor>
+                  </descriptors>
+              </configuration>
+     </plugin>
+ </plugins>
+ </build>
+            
+ </project>

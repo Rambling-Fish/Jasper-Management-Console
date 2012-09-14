@@ -17,6 +17,7 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <main.basedir>${project.basedir}</main.basedir>
   </properties>
 
   <dependencies>
@@ -70,41 +71,31 @@
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
           <!--                  Output "main" directory 		  			 -->
           <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-          <!--<outputDirectory>${project.prarent.build.outputDirectory}</outputDirectory>-->
+          <outputDirectory>${project.parent.basedir}/build</outputDirectory>
           <resources>          
-             <resource> <!--  components jars -->
-               <targetpaths>
-             	<targetpath>${project.prarent.build.outputDirectory}/lib</targetpath>
-             </targetpaths>
+              <resource> <!--  components jars -->
+              <targetPath>lib</targetPath> 
               <directory>target</directory>
                <includes>
-               <include>*.jar</include></includes>
-             </resource>
+               <include>*.jar</include>
+               </includes>
+              </resource>
               <resource> <!-- Add dependencies jars to /lib -->
-              <targetpath>${project.prarent.build.outputDirectory}/lib</targetpath>
+<!--            <targetPath>${project.prarent.build.outputDirectory}/lib</targetPath> -->
+                <targetPath>lib</targetPath>
                <directory>target/dependency</directory>
                <includes>
                <include>*.jar</include></includes>
              </resource>
-             <resources> <!-- Add /config Outputdir & files  -->
-           		<targetpaths>
-            	<targetpath>${project.prarent.build.outputDirectory}/config</targetpath>
-             	</targetpaths>
-         		<directory>${project.basedir}/config/src/main/config</directory>
-         	 </resources>
+              <resource> <!-- Add /config Outputdir & files  -->
+             	<targetPath>config</targetPath>
+         		<directory>${project.parent.basedir}/config/src/main/config</directory>
+         	 </resource>
         	 <resource><!-- Add scripts /bin Outputdir & filess  -->
-        	 <targetpaths>
-            	<targetpath>${project.prarent.build.outputDirectory}/bin</targetpath>
-             	</targetpaths>
-         		<directory>${project.basedir}/tools/bin</directory>
+            	<targetPath>bin</targetPath>
+         		<directory>${project.parent.basedir}/tools/bin</directory>
         	 </resource> 
-        	<reource> <!--  add dashboards XML's /dashboards Outputdir -->
-        	 <targetpaths>
-            	<targetpath>${project.prarent.build.outputDirectory}/dashboards</targetpath>
-             	</targetpaths>
-             	<directory>${project.basedir}/webui/src/main/dashboards</directory>
-        	</reource>
-         </resources>              
+            </resources>              
          </configuration>            
        </execution>
      </executions>
@@ -112,50 +103,22 @@
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <!-- Execute ANT scripts for Modules, Client and Startup jar       -->
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <!-- Produce jasper_console package archive    					 -->
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
     <plugin>
-        <artifactId>maven-antrun-plugin</artifactId>
-        <executions>
-          <execution>
-            <id>ant-magic</id>
-            <phase>prepare-package</phase>
-            <goals>
-              <goal>run</goal>
-            </goals>
-            <configuration>
-              <tasks> 
-                <!--  "build-all-modules"                 -->
-                <ant antfile="${basedir}/modules/build.xml"
-                     target="build-all-modules"/>
-                <!--  build "connector" module -->
-                <ant antfile="${basedir}/connector/build.xml"
-                     target="compile"/>
-                <!--  build jmanage-client jar / "ADD client-build goal -->
-                <!--  to build.xm           							-->
-          <!--  <ant antfile="${basedir}/moudules/build.xml" -->
-		  <!--               target="compile"/> -->
-                <!--  build webUI module -->
-                <ant antfile="${basedir}/webui/build.xml" 
-                     target="compile"/> s
-              </tasks>
-            </configuration>
-          </execution>
-        </executions>
-      </plugin>
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- Produce jasper_console package archive    					 -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <plugin>
-           <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.2.2</version>
-                <!-- The configuration of the plugin -->
-                <configuration>
-                    <!-- Specifies the configuration file of the assembly plugin -->
-                    <descriptors>
-                        <descriptor>assembly.xml</descriptor>
-                    </descriptors>
-                </configuration>
-       </plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-assembly-plugin</artifactId>
+              <version>2.2.2</version>
+              <!-- The configuration of the plugin -->
+              <configuration>
+                  <!-- Specifies the configuration file of the assembly plugin -->
+                  <descriptors>
+                      <descriptor>assembly.xml</descriptor>
+                  </descriptors>
+              </configuration>
+     </plugin>
  </plugins>
  </build>
             
