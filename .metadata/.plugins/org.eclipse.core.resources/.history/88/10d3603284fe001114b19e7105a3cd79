@@ -1,5 +1,5 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<!-- Jasper Management Console Parent POM file									   -->
+<!-- Copy resources 											   -->
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -10,7 +10,7 @@
   <version>1.0</version>
   <packaging>pom</packaging>
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  Final Package name jasper_console or something				 -->
+  <!--  Final Package name jasper_console or somthing				 -->
   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   <name>jasper_console</name>
   <url>http://maven.apache.org</url>
@@ -27,14 +27,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!--  include the children projects for JManage components jars    -->
-  <!--  then and solve their dependencies modules are: 				 -->
-  <!--  alerts, utils, cmdui,crypto,config, services, management, 	 -->
-  <!--  connector, and tools     									 -->
-  <!--  the rest of the modules are using ant build script for       -->
-  <!--  building so we are using "antrun" plugin to compile them     -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+ <!--  include the children projects that required Maven to build then and solve thier dependencies  -->
+ <!--  modules are: alerts, utils, cmdui,crypto,config, services, management, connector, and tools -->
+ <!--  the rest of the modules are using ant build script for building so we are using "antrun" plugin to compile them -->
   <modules>
   	<module>auth</module>
   	<module>alerts</module>
@@ -47,13 +42,10 @@
   	<module>connector</module>
   	<module>tools</module>  	
   </modules>
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-  <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<!--  the above section will build jars for components and the following section puts them in unified /lib directory -->
    <build>
    <plugins>
-   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-   <!-- copying jars and dependencies into /lib directory   		  -->
-   <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+   <!-- Maven resource plug-in for copying required components jars and thier dependencies into a unified output /lib directory-->
    <plugin>
      <groupId>org.apache.maven.plugins</groupId>
      <artifactId>maven-resources-plugin</artifactId>
@@ -67,11 +59,9 @@
            <goal>copy-resources</goal>
          </goals>
          <configuration>
-          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-          <!--                  Output "main" directory 		  			 -->
-          <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+         <!--  this refers to the "main" output directory -->
           <!--<outputDirectory>${project.prarent.build.outputDirectory}</outputDirectory>-->
-          <resources>          
+           <resources>          
              <resource> <!--  components jars -->
                <targetpaths>
              	<targetpath>${project.prarent.build.outputDirectory}/lib</targetpath>
@@ -80,25 +70,25 @@
                <includes>
                <include>*.jar</include></includes>
              </resource>
-              <resource> <!-- Add dependencies jars to /lib -->
+              <resource> <!--  dependencies jars -->
               <targetpath>${project.prarent.build.outputDirectory}/lib</targetpath>
                <directory>target/dependency</directory>
                <includes>
                <include>*.jar</include></includes>
              </resource>
-             <resources> <!-- Add /config Outputdir & files  -->
+             <resources> <!-- /config directory and contents  -->
            		<targetpaths>
             	<targetpath>${project.prarent.build.outputDirectory}/config</targetpath>
              	</targetpaths>
          		<directory>${project.basedir}/config/src/main/config</directory>
          	 </resources>
-        	 <resource><!-- Add scripts /bin Outputdir & filess  -->
+        	 <resource><!-- Add scripts to /bin directory and contents  -->
         	 <targetpaths>
             	<targetpath>${project.prarent.build.outputDirectory}/bin</targetpath>
              	</targetpaths>
          		<directory>${project.basedir}/tools/bin</directory>
         	 </resource> 
-        	<reource> <!--  add dashboards XML's /dashboards Outputdir -->
+        	<reource> <!--  add the dashboards XML's to the output directory -->
         	 <targetpaths>
             	<targetpath>${project.prarent.build.outputDirectory}/dashboards</targetpath>
              	</targetpaths>
@@ -108,10 +98,8 @@
          </configuration>            
        </execution>
      </executions>
-    </plugin>
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <!-- Execute ANT scripts for Modules, Client and Startup jar       -->
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+     </plugin>
+        <!-- Build the modules that requires antrun plugin: connector, jmanage jar and webUI component -->
     <plugin>
         <artifactId>maven-antrun-plugin</artifactId>
         <executions>
@@ -123,29 +111,26 @@
             </goals>
             <configuration>
               <tasks> 
-                <!--  "build-all-modules"                 -->
+              <!--  build "all-modules" module -->
                 <ant antfile="${basedir}/modules/build.xml"
-                     target="build-all-modules"/>
-                <!--  build "connector" module -->
+                     target="compile"/>
+                 <!--  build "connector" module -->
                 <ant antfile="${basedir}/connector/build.xml"
                      target="compile"/>
-                <!--  build jmanage-client jar / "ADD client-build goal -->
-                <!--  to build.xm           							-->
-          <!--  <ant antfile="${basedir}/moudules/build.xml" -->
-		  <!--               target="compile"/> -->
+                <!--  build jmanage-client jar / need to add that ant build.xml for jar the client-->
+<!--                 <ant antfile="${basedir}/moudules/build.xml" -->
+<!--                      target="compile"/> -->
                 <!--  build webUI module -->
-                <ant antfile="${basedir}/webui/build.xml" 
-                     target="compile"/> s
+                 <ant antfile="${basedir}/webui/build.xml" 
+                      target="compile"/> s
               </tasks>
             </configuration>
           </execution>
         </executions>
       </plugin>
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <!-- Produce jasper_console package archive    					 -->
-      <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-      <plugin>
-           <groupId>org.apache.maven.plugins</groupId>
+   <!-- The configuration of maven-assembly-plugin to produce the file assembly for the JManage package-->
+   <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.2.2</version>
                 <!-- The configuration of the plugin -->
@@ -155,8 +140,9 @@
                         <descriptor>assembly.xml</descriptor>
                     </descriptors>
                 </configuration>
-       </plugin>
- </plugins>
+            </plugin>
+            <!-- Add the antrun plug-in  -->
+       	 </plugins>
  </build>
             
  </project>

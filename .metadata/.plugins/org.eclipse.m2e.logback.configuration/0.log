@@ -5747,3 +5747,122 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2012-09-13 16:08:24,455 [Worker-139] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
 2012-09-13 16:09:00,029 [Worker-138] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
 2012-09-13 16:09:24,998 [Worker-131] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:38:07,784 [Worker-5] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo.maven.apache.org/maven2
+2012-09-14 11:38:13,674 [Worker-5] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-14 11:38:16,028 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: net.petri.kainulainen.maven:assembly-plugin:0.1 @ /Users/saadnouri/JManage-Workspace/assembly-plugin/pom.xml.
+2012-09-14 11:38:17,048 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:38:47,519 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-14 11:38:47,521 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-09-14 11:38:47,529 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-14 11:38:47,593 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-14 11:40:09,151 [Worker-5] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo.maven.apache.org/maven2 in 123232 ms
+2012-09-14 11:41:54,597 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:42:30,548 [Worker-11] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:43:31,316 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:44:01,188 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:52:33,433 [Worker-16] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:55:11,294 [Worker-22] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: in comment after two dashes (--) next character must be > not   (position: END_TAG seen ...include the children projects that required Maven to build \n <!-- ... @32:7) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment after two dashes (--) next character must be > not   (position: END_TAG seen ...include the children projects that required Maven to build \n <!-- ... @32:7) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseComment(MXParser.java:2360) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1189) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1090) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2247) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 11:55:13,282 [Worker-23] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Could not read pom.xml
+org.eclipse.core.runtime.CoreException: Could not read pom.xml
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:531) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:539) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:478) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:327) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:278) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.refresh(MavenProjectManager.java:58) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:87) [org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:728) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:199) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:239) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:292) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42) [org.eclipse.equinox.common_3.6.100.v20120522-1841.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:295) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:351) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:374) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241) [org.eclipse.core.resources_3.8.0.v20120522-2034.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54) [org.eclipse.core.jobs_3.5.200.v20120521-2346.jar:na]
+Caused by: org.apache.maven.model.io.ModelParseException: in comment after two dashes (--) next character must be > not   (position: END_TAG seen ...include the children projects that required Maven to build \n <!-- ... @32:7) 
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:127) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:91) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.readModel(MavenImpl.java:529) ~[org.eclipse.m2e.core_1.1.0.20120530-0009.jar:na]
+	... 18 common frames omitted
+Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: in comment after two dashes (--) next character must be > not   (position: END_TAG seen ...include the children projects that required Maven to build \n <!-- ... @32:7) 
+	at org.codehaus.plexus.util.xml.pull.MXParser.parseComment(MXParser.java:2360) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextImpl(MXParser.java:1189) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.next(MXParser.java:1105) ~[plexus-utils-2.0.6.jar:na]
+	at org.codehaus.plexus.util.xml.pull.MXParser.nextTag(MXParser.java:1090) ~[plexus-utils-2.0.6.jar:na]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.parseModel(MavenXpp3Reader.java:2247) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4088) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.xpp3.MavenXpp3Reader.read(MavenXpp3Reader.java:4021) ~[maven-model-3.0.4.jar:3.0.4]
+	at org.apache.maven.model.io.DefaultModelReader.read(DefaultModelReader.java:122) ~[maven-model-builder-3.0.4.jar:3.0.4]
+	... 20 common frames omitted
+2012-09-14 11:55:22,145 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:55:32,364 [Worker-21] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:56:29,769 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:57:12,679 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:57:32,278 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:58:51,883 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 11:59:20,541 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:00:04,462 [Worker-22] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:00:23,664 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:00:37,726 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:00:59,348 [Worker-24] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:03:15,137 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:03:35,459 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:03:53,389 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:04:16,549 [Worker-34] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:04:30,173 [Worker-37] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:05:05,691 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:09:42,733 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:11:20,761 [Worker-43] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:12:57,929 [Worker-46] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:13:50,112 [Worker-39] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:18:07,111 [Worker-51] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:18:24,677 [Worker-54] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:19:16,463 [Worker-54] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:19:31,490 [Worker-57] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:21:17,725 [Worker-47] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:22:47,256 [Worker-52] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:23:06,454 [Worker-54] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:23:19,900 [Worker-56] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:23:58,999 [Worker-62] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:24:59,660 [Worker-61] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-14 12:25:07,632 [Worker-61] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
+2012-09-14 12:25:07,632 [Worker-61] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean

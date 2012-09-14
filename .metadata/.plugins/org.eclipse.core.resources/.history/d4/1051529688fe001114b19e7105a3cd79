@@ -1,5 +1,5 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<!-- Jasper Management Console Parent POM file									   -->
+<!-- Copy resources 											   -->
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -123,10 +123,10 @@
             </goals>
             <configuration>
               <tasks> 
-                <!--  "build-all-modules"                 -->
+              <!--  "build-all-modules"                 -->
                 <ant antfile="${basedir}/modules/build.xml"
                      target="build-all-modules"/>
-                <!--  build "connector" module -->
+                 <!--  build "connector" module -->
                 <ant antfile="${basedir}/connector/build.xml"
                      target="compile"/>
                 <!--  build jmanage-client jar / "ADD client-build goal -->
@@ -134,8 +134,8 @@
           <!--  <ant antfile="${basedir}/moudules/build.xml" -->
 		  <!--               target="compile"/> -->
                 <!--  build webUI module -->
-                <ant antfile="${basedir}/webui/build.xml" 
-                     target="compile"/> s
+                 <ant antfile="${basedir}/webui/build.xml" 
+                      target="compile"/> s
               </tasks>
             </configuration>
           </execution>
