@@ -6936,3 +6936,12 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: end tag nam
 2012-09-14 16:10:12,568 [Worker-248] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
 2012-09-14 16:10:21,447 [Worker-252] INFO  o.e.m.i.launch.MavenLaunchDelegate - /Users/saadnouri/JManage-Workspace/jmanage
 2012-09-14 16:10:21,981 [Worker-252] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean dependency:copy-dependencies package
+2012-09-17 10:22:35,803 [Worker-2] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo.maven.apache.org/maven2
+2012-09-17 10:22:37,991 [Worker-2] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 16
+2012-09-17 10:22:39,191 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: net.petri.kainulainen.maven:assembly-plugin:0.1 @ /Users/saadnouri/JManage-Workspace/assembly-plugin/pom.xml.
+2012-09-17 10:22:39,289 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: jmanage:main:1.0 @ /Users/saadnouri/JManage-Workspace/jmanage/pom.xml.
+2012-09-17 10:23:31,587 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-17 10:23:31,655 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2012-09-17 10:23:31,664 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2012-09-17 10:23:31,709 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/saadnouri/JManage-Workspace/assembly-plugin/src/test/resources
+2012-09-17 10:24:00,435 [Worker-2] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo.maven.apache.org/maven2 in 84705 ms
