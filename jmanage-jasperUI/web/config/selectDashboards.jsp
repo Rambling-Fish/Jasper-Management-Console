@@ -10,7 +10,7 @@
 	        (Collection<DashboardConfig>)request.getAttribute(RequestAttributes.QUALIFYING_DASHBOARDS);
 	if(dashboards == null || dashboards.size() == 0){
 		%>
-			<p class="plaintext">There are no qualifying dashboards available for this application.</p>		
+			<p class="text-warning">There are no qualifying dashboards available for this application.</p>		
 		<%
 		return;
 	}
@@ -20,10 +20,13 @@
 <jmhtml:javascript formName="dashboardSelectionForm" page="1"/>
 <jmhtml:form action="/config/addDashboard" onsubmit="return validateDashboardSelectionForm(this)">
 <jmhtml:hidden property="page" value="1"/>
-<table border="0" cellspacing="0" cellpadding="5" width="600" class="table">
+<table class="table">
+    <thead>
     <tr class="tableHeader">
         <td colspan="2">Available Dashboards</td>
     </tr>
+    </thead>
+    <tbody>
     <%
         DashboardSelectionForm dbForm =
                 (DashboardSelectionForm)request.getAttribute("dashboardSelectionForm");
@@ -46,15 +49,16 @@
             <td class="plaintext"><%=dashboard.getName()%></td>
         </tr>
     <%  }%>
+    </tbody>
 </table>
 <br/>
 <table>
     <tr>
         <td align="center" colspan="2">
-            <jmhtml:submit property="" value="Add" styleClass="Inside3d" />
+            <jmhtml:submit property="" value="Add" styleClass="btn" />
             &nbsp;&nbsp;&nbsp;
             <jmhtml:button property="" value="Cancel"
-                    onclick="JavaScript:history.back();" styleClass="Inside3d" />
+                    onclick="JavaScript:history.back();" styleClass="btn" />
         </td>
     </tr>
 </table>

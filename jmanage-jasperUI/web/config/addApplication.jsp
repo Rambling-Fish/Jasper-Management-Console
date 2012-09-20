@@ -16,10 +16,13 @@
 <jmhtml:form action="/config/addApplication" method="post"
                                 onsubmit="return validateApplicationForm(this)">
 
-<table class="table" border="0" cellspacing="0" cellpadding="5" width="500">
+<table class="table">
+    <thead>
     <tr class="tableHeader">
-    <td colspan="2">Add Application</td>
+    <th colspan="2">Add Application</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
       <td class="headtext1">Type:</td>
       <td class="plaintext"><c:out value="${requestScope.applicationForm.type}" />
@@ -73,8 +76,10 @@
     <tr>
         <td>&nbsp;</td>
         <td>
-            <jmhtml:submit value="Save" styleClass="Inside3d"/>&nbsp;&nbsp;&nbsp;
-            <jmhtml:button property="" value="Cancel" onclick="showAvailableApplications()" styleClass="Inside3d" />
+            <jmhtml:submit value="Save" styleClass="btn"/>&nbsp;&nbsp;&nbsp;
+            <jmhtml:button property="" value="Cancel" onclick="showAvailableApplications()" styleClass="btn" />
         </td>
+    </tr>    
+   </tbody>     
   </table>
 </jmhtml:form>

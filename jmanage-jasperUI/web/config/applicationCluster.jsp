@@ -59,10 +59,13 @@
  <jmhtml:hidden property="refreshApps" value="true" />
  <jmhtml:hidden property="selectedChildApplications" value="" />
 
-<table class="table" border="0" cellspacing="0" cellpadding="5" width="500">
+<table class="table">
+    <thead>
     <tr class="tableHeader">
-        <td colspan="2">Application Cluster</td>
+        <th colspan="2">Application Cluster</th>
     </tr>
+    </thead>
+    <tbody>
     <tr>
         <td class="headtext1">Name:</td>
         <td><jmhtml:text property="name" size="50"/></td>
@@ -84,9 +87,9 @@
         </jmhtml:select>
         </td>
         <td width="10">
-        <input type="button" class="Inside3d" onClick="add();" value="Add >>"/>
+        <input type="button" class="btn" onClick="add();" value="Add        >>"/>
         <br>
-        <input type="button" class="Inside3d" onClick="remove()" value="<< Remove"/>
+        <input type="button" class="btn" onClick="remove()" value="<< Remove"/>
         </td>
         <td>
         <jmhtml:select property="childApplicationIds" multiple="true">
@@ -96,11 +99,12 @@
     </tr>
     <tr>
         <td colspan="3" align="center">
-          <jmhtml:submit value="Save" styleClass="Inside3d"/>
+          <jmhtml:submit value="Save" styleClass="btn"/>
           &nbsp;&nbsp;&nbsp;
-          <jmhtml:button property="" value="Cancel" onclick="JavaScript:history.back();" styleClass="Inside3d" />
+          <jmhtml:button property="" value="Cancel" onclick="JavaScript:history.back();" styleClass="btn" />
         </td>
     </tr>
+    </tbody>
 </table>
 </jmhtml:form>
 <script>computeSelectedChildApplications();</script>

@@ -69,22 +69,24 @@
     navList.add(0, new Navigation("Applications", "/config/managedApplications.do"));
 %>
 
-<div id="breadcrumb">
+<div id="">
+    <ul class="breadcrumb">
     <%
         for(Iterator it=navList.iterator(); it.hasNext(); ){
             Navigation nav = (Navigation)it.next();
             if(it.hasNext()){
     %>
-                <a href="<%=nav.link%>"><%=nav.name%></a>&nbsp;&gt;&nbsp;
+                <li><a href="<%=nav.link%>"><%=nav.name%></a><span class="divider">/</span></li>    
     <%
             }else{
                 // last element should be without link
     %>
-                <%=nav.name%>
+                <li class="active"><%=nav.name%></li>
     <%
             }
         }
     %>
+    </ul>
 </div>
 
 <br/>

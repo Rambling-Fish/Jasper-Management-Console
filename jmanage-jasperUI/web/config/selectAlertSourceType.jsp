@@ -10,10 +10,13 @@
 
 <jmhtml:form action="/config/selectAlertSourceType" method="post">
 
-<table cellspacing="0" cellpadding="5" width="400" class="table">
+<table class="table">
+<thead>
 <tr class="tableHeader">
     <td>Select Alert Source</td>
 </tr>
+</thead>
+<tbody>
 <tr>
     <td class="plaintext"><jmhtml:radio property="alertSourceType"
                       value="<%=AlertSourceConfig.SOURCE_TYPE_NOTIFICATION%>"/>
@@ -36,10 +39,11 @@
 </tr>
 <tr>
     <td align="center" colspan="2">
-        <jmhtml:submit property="" value="Next" styleClass="Inside3d" />
+        <jmhtml:submit property="" value="Next" styleClass="btn" />
         &nbsp;&nbsp;&nbsp;
-        <jmhtml:button property="" value="Cancel" onclick="JavaScript:history.back();" styleClass="Inside3d" />
+        <jmhtml:button property="" value="Cancel" onclick="JavaScript:history.back();" styleClass="btn" />
     </td>
 </tr>
+</tbody>
 </table>
 </jmhtml:form>

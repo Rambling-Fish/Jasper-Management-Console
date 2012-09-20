@@ -19,8 +19,8 @@
 %>
 
 <p>
-<jmhtml:form action="/config/startAddMultiMBeanConfig" method="post">
-    <jmhtml:text property="objectName" />&nbsp;&nbsp;<jmhtml:submit styleClass="Inside3d" value="Filter by object name" />
+<jmhtml:form action="/config/startAddMultiMBeanConfig" styleClass="form-search" method="post">
+    <jmhtml:text property="objectName" />&nbsp;&nbsp;<jmhtml:submit styleClass="btn" value="Filter by object name" />
 </jmhtml:form>
 </p>
 
@@ -40,9 +40,12 @@
         String domain = (String)it.next();
 %>
 <table border="0" cellspacing="0" cellpadding="5" width="650" class="table">
+    <thead>
     <tr class="tableHeader">
         <td colspan="2"><%=domain%></td>
     </tr>
+    </thead>
+    <tbody>
         <%
         Set objectNameList = (Set)domainToObjectNameListMap.get(domain);
         for(Iterator objectNameIt = objectNameList.iterator(); objectNameIt.hasNext();){
@@ -66,15 +69,16 @@
         </td>
     </tr>
 <%      } // inner for%>
+</tbody>
 </table>
 <br/>
 <%  } // outer for%>
 <%if(hasMbeans){%>
 <div bgcolor="#E6EEF9" align="left">
-    <jmhtml:submit styleClass="Inside3d" value="Add" />
+    <jmhtml:submit styleClass="btn" value="Add" />
     &nbsp;&nbsp;&nbsp;
     <jmhtml:button property="" value="Cancel"
-            onclick="JavaScript:history.back();" styleClass="Inside3d" />
+            onclick="JavaScript:history.back();" styleClass="btn" />
 </div>
 <%}%>
 </jmhtml:form>

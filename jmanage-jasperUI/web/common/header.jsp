@@ -7,23 +7,35 @@
 <%@page import="org.jmanage.webui.view.UserViewHelper,
 				org.jmanage.webui.util.WebContext,
                 org.jmanage.core.auth.User"%>
-<table width="900" border="0" cellspacing="0" cellpadding="0" bgcolor="#e8b120">
-  <tr>
-    <td><jmhtml:img src="/images/logoNew.gif" width="150" height="48" /></td>
-    <td align="right" valign="bottom" class="plaintext">
         <%if(user != null){%>
-        <div style="margin-right:3px;margin-bottom:3px">
-        <a class="nav0" href="/config/managedApplications.do">Home</a>&nbsp;|&nbsp;
-        <a class="nav0" href="/auth/profile.do">Profile</a>&nbsp;|&nbsp;
-		<%if(UserViewHelper.hasAdminAccess(request)){ %>
-        	<a class="nav0" href="/config/admin.do">Admin</a>&nbsp;|&nbsp;
-		<%}%>
-        <a class="nav0" href="/auth/logout.do">Logout</a>&nbsp;|&nbsp;
-        Logged-in as <b><%=user.getName()%></b>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </a>
+              <a class="brand" href="/config/managedApplications.do">Jasper Console</a>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  
+                  <li><a href="/auth/profile.do">Profile</a></li>
+                  <%if(UserViewHelper.hasAdminAccess(request)){ %>
+                        <li><a href="/config/admin.do">Admin</a></li>
+                    <%}%>
+                    <li><a href="/auth/logout.do">Logout</a></li>
+                    
+                    <%}else{%>
+                        &nbsp;
+                    <%}%>
+                </ul>
+                    <%if(user != null){%>
+                    <p class="navbar-text pull-right">
+                      Logged in as <a href="/auth/profile.do"><%=user.getName()%></a>
+                    </p>
+                    <%}%>
+              </div><!--/.nav-collapse -->
+            </div>
+          </div>
         </div>
-        <%}else{%>
-            &nbsp;
-        <%}%>
-    </td>
-  </tr>
-</table>

@@ -98,7 +98,7 @@
 -->
 </script>
 <jmhtml:errors />
-<table class="table" border="0" cellspacing="0" cellpadding="5" width="900">
+<table class="table">
     <tr>
         <td class="headtext" width="100" valign="top">Object Name</td>
         <td class="plaintext" valign="top" nowrap="true">
@@ -140,10 +140,10 @@
                         <jmhtml:hidden property="objectName"/>
                         <jmhtml:hidden property="refreshApps" value="true"/>
                         <jmhtml:hidden property="applicationCluster"/>
-                        <a href="JavaScript:document.mbeanConfigForm.submit();" class="a1">Add to Application</a>
+                        <a href="JavaScript:document.mbeanConfigForm.submit();" class="btn">Add to Application</a>
                         <%if(applicationConfig.getClusterConfig() != null){%>
                         &nbsp;Or&nbsp;
-                        <a href="JavaScript:addToApplicationCluster();" class="a1">Add to Application Cluster</a>
+                        <a href="JavaScript:addToApplicationCluster();" class="btn">Add to Application Cluster</a>
                         <%}%>
                     </jmhtml:form>
                     <%}%>
@@ -350,8 +350,8 @@
 <tr>
     <td class="plaintext" colspan="<%=columns-2 %>">
         <%if(showUpdateButton){%>
-        To save the changes to the attribute values click on
-            <jmhtml:submit value="Save" styleClass="Inside3d" />
+        <p class="text-info">To save the changes to the attribute values click on <jmhtml:submit value="Save" styleClass="btn" /></p>
+            
         <%}%>
     </td>
     <td class="plaintext" colspan="2" align="right">
@@ -439,9 +439,9 @@
         <%  if(AccessController.canAccess(webContext.getServiceContext(),
                         ACLConstants.ACL_EXECUTE_MBEAN_OPERATIONS,
                         operationInfo.getName())){  %>
-        <input tabindex="<%=(tabIndex++) + params.length%>" type="submit" value="Execute" class="Inside3d"/>&nbsp;
+        <input tabindex="<%=(tabIndex++) + params.length%>" type="submit" value="Execute" class="btn"/>&nbsp;
         <%  }else{  %>
-        <input tabindex="<%=(tabIndex++) + params.length%>" type="submit" value="Execute" class="Inside3d" disabled/>&nbsp;
+        <input tabindex="<%=(tabIndex++) + params.length%>" type="submit" value="Execute" class="btn" disabled/>&nbsp;
         <%  }   %>
         <br/>
         <nobr>[Impact: <%=MBeanUtils.getImpact(operationInfo.getImpact())%>]</nobr>
