@@ -26,3 +26,10 @@ ADMIN Added Mule.webView-to-rest-interface-0.1:name=Configuration to application
 ADMIN Updated the attributes of application:jApp, object name:Mule.webView-to-rest-interface-0.1:name=Configuration [FullStackTraces=true] [StackTraceFilter=org.mule.processor.AbstractInterceptingMessageProcessor,org.mule.processor.chain] on Thu Sep 20 15:56:20 EDT 2012
 ADMIN Updated the attributes of application:jApp, object name:Mule.webView-to-rest-interface-0.1:name=Configuration [FullStackTraces=true] [StackTraceFilter=org.mule.processor.AbstractInterceptingMessageProcessor,org.mule.processor.chain] on Thu Sep 20 15:56:29 EDT 2012
 ADMIN logged in successfully on Thu Sep 20 16:01:01 EDT 2012
+ADMIN logged in successfully on Fri Sep 21 10:49:19 EDT 2012
+ADMIN logged in successfully on Fri Sep 21 10:52:46 EDT 2012
+ADMIN Performed printHtmlSummary on Mule.default:name=AllStatistics,type=Statistics in application jApp on Fri Sep 21 11:00:20 EDT 2012
+ADMIN Performed printCSVSummary on Mule.default:name=AllStatistics,type=Statistics in application jApp on Fri Sep 21 11:00:29 EDT 2012
+ADMIN Performed printHtmlSummary on Mule.default:name=AllStatistics,type=Statistics in application jApp on Fri Sep 21 11:00:40 EDT 2012
+ADMIN logged in successfully on Fri Sep 21 12:34:08 EDT 2012
+ADMIN logged in successfully on Fri Sep 21 13:01:55 EDT 2012

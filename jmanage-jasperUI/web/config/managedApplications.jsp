@@ -104,55 +104,7 @@
 <br>
 <%-- don't use the link tag here, as it adds applicationId request param --%>
 <a class="btn" href="/config/showAvailableApplications.do" >Add Application</a>
-<a class="btn" href="/config/showApplicationCluster.do">Add Application Cluster</a>
+<!-- a class="btn" href="/config/showApplicationCluster.do">Add Application Cluster</a -->
 <br><br>
-
-<%
-    List alerts = (List)request.getAttribute("alerts");
-    if(alerts.size() == 0){
-%>
-<p class="text-info">
-    There are no alerts.
-</p>
-<%
-    }else{
-%>
-
-<table cellspacing="0" cellpadding="5" width="800" class="table">
-    <tr class="tableHeader">
-        <td colspan="7">Triggered Alerts</td>
-    </tr>
-    <tr>
-        <td class="headtext">Timestamp</td>
-        <td class="headtext">Application</td>
-        <td class="headtext">Alert Name</td>
-        <td class="headtext">Message</td>
-        <td class="headtext">Source</td>
-        <td class="headtext">&nbsp;</td>
-    </tr>
-<%
-        for(Iterator it=alerts.iterator(); it.hasNext(); ){
-            AlertInfo alert = (AlertInfo)it.next();
-%>
-    <tr>
-        <td class="plaintext"><%=alert.getFormattedTimeStamp()%></td>
-        <td class="plaintext"><%=alert.getApplicationName()%></td>
-        <td class="plaintext"><%=alert.getAlertName()%></td>
-        <td class="plaintext"><%=alert.getMessage()%></td>
-        <td class="plaintext">
-				<%if(alert.getObjectName() != null){ %>
-        <a href="/app/mbeanView.do?<%=RequestParams.APPLICATION_ID%>=<%=alert.getApplicationId()%>&<%=RequestParams.OBJECT_NAME%>=<%=URLEncoder.encode(alert.getObjectName(), "UTF-8")%>">
-            <%=alert.getObjectName()%></a>
-        <%}else{ %>
-        	&nbsp;
-        <%} %>
-        </td>
-        <td class="plaintext"><a href="/app/removeConsoleAlert.do?alertId=<%=alert.getAlertId()%>">Remove</a></td>
-    </tr>
-<%
-        }
-    }
-%>
-</table>
-
+<!-- remove the Alerts section from teh main page, nn -->
 

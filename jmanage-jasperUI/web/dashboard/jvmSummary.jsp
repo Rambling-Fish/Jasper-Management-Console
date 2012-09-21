@@ -7,7 +7,7 @@
     ApplicationConfig appConfig = webContext.getApplicationConfig();
 %>
 <table class="table table-condensed">
-	<tr><td align="right"><h3>JAVA - JVM</h3></td><td><h4>Application Summary</h4></td></tr>
+	<tr><td align="right"><h4>Application Summary</h4></td><td><h4>Application Summary</h4></td></tr>
     <tr><td><jm:dashboardComponent id="com1"/></td><td><jm:dashboardComponent id="com2"/></td></tr>
     <tr><td><jm:dashboardComponent id="com3"/></td><td>&nbsp;</td></tr>
     <tr><td colspan="2">&nbsp;</td></tr>

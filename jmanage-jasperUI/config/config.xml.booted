@@ -1,2 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application-config><applications><application id="1" name="jApp" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160"><mbeans><mbean name="memory"><object-name>java.lang:type=Memory</object-name></mbean><mbean name="webView-to-rest-interface-0.1"><object-name>Mule.webView-to-rest-interface-0.1:name=Configuration</object-name></mbean></mbeans><alerts /><graphs /><dashboards><dashboard id="jvmThreads" /><dashboard id="jvmSummary" /><dashboard id="classes" /></dashboards></application><application id="1348112941794" name="Japser_Engine" url="service:jmx:rmi:///jndi/rmi://173.195.48.126:1099/server" username="" password="7c82082b0cd62b60" type="jsr160"><mbeans /><alerts /><graphs /><dashboards /></application></applications></application-config>
+<application-config>
+	<applications>
+		<application id="1" name="ESB_Server" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>
+		<application id="2" name="Japser_Engine" url="service:jmx:rmi:///jndi/rmi://173.195.48.126:1099/server" username="" password="7c82082b0cd62b60" type="jsr160">
+			<mbeans />
+			<alerts />
+			<graphs />
+			<dashboards />
+		</application>
+		<application id="3" name="jApp-cat010-client" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>
+		<application id="4" name="jApp-cat010-interface-ajax" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>
+		<application id="5" name="jApp-cat010-interface-eavd" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>
+		<application id="6" name="jApp-cat010-interface-rest" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>
+		<application id="7" name="jApp-cat010-webview-interface-ajax" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>
+		<application id="8" name="jApp-cat010-webview-interface-rest" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>	
+		<application id="9" name="jApp-webview-client" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>
+		<application id="10" name="jApp-webview-interface-ajax" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>	
+		<application id="11" name="jApp-webview-interface-rest" url="service:jmx:rmi:///jndi/rmi://localhost:1099/server" username="jsmith" password="0049e31dbc88ff9f" type="jsr160">
+			<mbeans>
+				<mbean name="memory">
+					<object-name>java.lang:type=Memory</object-name>
+				</mbean>
+			</mbeans>
+			<alerts />
+			<graphs />
+			<dashboards>
+				<!-- dashboard id="jvmThreads" / -->
+				<dashboard id="jvmSummary" />
+				<!-- dashboard id="classes" /-->
+			</dashboards>
+		</application>	
+	</applications>
+</application-config>

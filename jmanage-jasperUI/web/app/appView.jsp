@@ -12,7 +12,10 @@
                  org.jmanage.webui.dashboard.framework.DashboardConfig,
                  org.jmanage.webui.view.ApplicationViewHelper"%>
 
+<%@ page import="org.jmanage.core.config.ApplicationConfig"%>
 <%@ taglib uri="/WEB-INF/tags/jmanage/html.tld" prefix="jmhtml"%>
+<%@ taglib uri="/WEB-INF/tags/jmanage/jm.tld" prefix="jm"%>
+
 <script language="JavaScript">
     function deleteAlert(alertId, appId){
         var msg;
@@ -46,248 +49,130 @@
 		    RequestParams.APPLICATION_ID + "=" + appConfig.getApplicationId();
 %>
 <%-- Application Information --%>
+<script type="text/JavaScript" src="/js/dashboard.js"></script>
+<script type="text/JavaScript" src="/js/dojo/dojo.js.js"></script>
+<div> <h3><%=appConfig.getName()%></h3></div>
 <div class="row-fluid">
     <div class="span6">
-        <h3><%=appConfig.getName()%></h3>
-        <p>
-            <jmhtml:form action="/app/mbeanList" styleClass="form-search" method="post">
-                <jmhtml:text property="objectName" />&nbsp;&nbsp;<jmhtml:submit styleClass="btn" value="Find Managed Objects" />
-            </jmhtml:form>
-        </p>
-        <p>         
-        <jmhtml:link href="/config/showAddDashboard.do" acl="<%=ACLConstants.ACL_ADD_DASHBOARD%>" styleClass="a">
-            Add Dashboard</jmhtml:link>
-        </p>
-        <%
-            String link = "/config/showMBeans.do?"
-                    + RequestParams.END_URL + "=" + Utils.urlEncode("/config/showAddGraph.do")
-                    + "&" + RequestParams.MULTIPLE + "=true&"
-                    + RequestParams.DATA_TYPE + "=java.lang.Number&"
-                    + RequestParams.DATA_TYPE + "=javax.management.openmbean.CompositeData&"
-                    + RequestParams.NAVIGATION + "=" + Utils.urlEncode("Add Graph");
-        %>
-        <p>
-            <jmhtml:link href='<%=link%>' acl="<%=ACLConstants.ACL_ADD_GRAPH%>" styleClass="a">
-                Add Graph</jmhtml:link>
-        </p>
-        <p>
-            <jmhtml:link href="/config/showSelectAlertSourceType.do" acl="<%=ACLConstants.ACL_ADD_ALERT%>" styleClass="a">
-                Add Alert</jmhtml:link>
-        </p>
-        <p>
-            <jmhtml:link href="/config/startAddMultiMBeanConfig.do" acl="<%=ACLConstants.ACL_ADD_MBEAN_CONFIG%>"
-                styleClass="a">Add Managed Objects</jmhtml:link>
-        </p>
-    </div>
-    <div class="span6">
-        <h3>Availability</h3>
+        <h4>Availability</h4>
         <img class="well" src="<%=availabilityGraphURL%>" />
         <p class="text-info">Status: <%=ApplicationViewHelper.isApplicationUp(appConfig)?"Up":"Down"%> </p>
         <p class="text-info">Recording Since: <%=ApplicationViewHelper.getRecordingSince(appConfig)%></p>
     </div>
-</div>
+<%-- Configured Graphs --%>
+    <div class="row-fluid">
+        <%if(appConfig.getGraphs().size() > 0){%>
+            <div class="span6">
+        <%}else{%>
+            <div class="span12">
+        <%}%>    
+        
+        </div>
 
-<br/>
-<div class="row-fluid">
-    <%if(appConfig.getGraphs().size() > 0){%>
+        <%if(appConfig.getGraphs().size() > 0){%>
         <div class="span6">
-    <%}else{%>
-        <div class="span12">
-    <%}%>    
-        <table class="table">
-            <thead>    
             
-        <%--Dashboards--%>
-        <%
-        if(appConfig.getDashboards() != null && !appConfig.getDashboards().isEmpty()){
-        %>
-                <th colspan="2">Dashboards</th>
+            <table class="table">
+                <thead>
+                <tr>
+                   <th colspan="3">Graphs</th>
+                </tr>
                 </thead>
                 <tbody>
             <%
-                for(String dashboardId : appConfig.getDashboards()){
-                    DashboardConfig dashboardConfig = DashboardRepository.getInstance().get(dashboardId);
+                for(Iterator it=appConfig.getGraphs().iterator(); it.hasNext();){
+                    GraphConfig graphConfig = (GraphConfig)it.next();
             %>
-            <tr>
-                <td class="plaintext">
-                    <a href="/config/viewDashboard.do?applicationId=<%=appConfig.getApplicationId()%>&dashBID=<%=dashboardConfig.getDashboardId()%>">
-                        <%=dashboardConfig.getName()%></a></td>
-                <td align="right" width="60">
-                <%
-                    String deleteDashboardLink = "JavaScript:deleteDashboard('"
-                            + dashboardConfig.getDashboardId() + "','" + appConfig.getApplicationId() + "');";
-                %>
-                   <jmhtml:link href="<%=deleteDashboardLink%>" acl="<%=ACLConstants.ACL_EDIT_DASHBOARD%>"  styleClass="btn">
-                    Delete</jmhtml:link>
-               </td>
-            </tr>
-            <%}%>
-            <%}%>
-            </tbody>
-        </table>
-    </div>
-    
-    
-        <%-- Configured Graphs --%>
-<%if(appConfig.getGraphs().size() > 0){%>
-    <div class="span6">
-        
-        <table class="table">
-            <thead>
-            <tr>
-               <th colspan="3">Graphs</th>
-            </tr>
-            </thead>
-            <tbody>
-        <%
-            for(Iterator it=appConfig.getGraphs().iterator(); it.hasNext();){
-                GraphConfig graphConfig = (GraphConfig)it.next();
-        %>
-            <tr>
-                <td class="plaintext">
-                    <a href="/app/graphView.do?<%=RequestParams.APPLICATION_ID%>=<%=appConfig.getApplicationId()%>&graphId=<%=graphConfig.getId()%>">
-                            <%=graphConfig.getName()%></a>
-                </td>
-                <td align="right">
-                <%
-                        String editGraphLink ="/config/showEditGraph.do?"
-                                + RequestParams.GRAPH_ID + "=" + graphConfig.getId();
+                <tr>
+                    <td class="plaintext">
+                        <a href="/app/graphView.do?<%=RequestParams.APPLICATION_ID%>=<%=appConfig.getApplicationId()%>&graphId=<%=graphConfig.getId()%>">
+                                <%=graphConfig.getName()%></a>
+                    </td>
+                    <td align="right">
+                    <%
+                            String editGraphLink ="/config/showEditGraph.do?"
+                                    + RequestParams.GRAPH_ID + "=" + graphConfig.getId();
+                        %>
+                        <jmhtml:link href="<%=editGraphLink%>" acl="<%=ACLConstants.ACL_EDIT_GRAPH%>" styleClass="btn">Edit</jmhtml:link>
+                    </td>
+                    <td align="right" width="30">
+                    <%
+                        String deleteGraphLink = "JavaScript:deleteGraph('"
+                                + graphConfig.getId() + "','" + appConfig.getApplicationId() + "');";
                     %>
-                    <jmhtml:link href="<%=editGraphLink%>" acl="<%=ACLConstants.ACL_EDIT_GRAPH%>" styleClass="btn">Edit</jmhtml:link>
-                </td>
-                <td align="right" width="30">
-                <%
-                    String deleteGraphLink = "JavaScript:deleteGraph('"
-                            + graphConfig.getId() + "','" + appConfig.getApplicationId() + "');";
-                %>
-                    <jmhtml:link href="<%=deleteGraphLink%>" acl="<%=ACLConstants.ACL_EDIT_GRAPH%>" styleClass="btn">
-                        Delete</jmhtml:link>
-               </td>
-            </tr>
-        <%
-            }
-        %>
-        </tbody>
-        </table>
-    </div>    
-        
-        <%}%>
+                        <jmhtml:link href="<%=deleteGraphLink%>" acl="<%=ACLConstants.ACL_EDIT_GRAPH%>" styleClass="btn">
+                            Delete</jmhtml:link>
+                   </td>
+                </tr>
+            <%
+                }
+            %>
+            </tbody>
+            </table>
+        </div>    
+            
+            <%}%>
+        </div>
+    
+    <div>
+    <table class="table table-condensed">
+    <tr><td><div id="com1"><b>App up time (milliseconds) : </b>15915179</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com1', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td><div id="com2"><b>Process CPU time (nanoseconds) : </b>170780000000</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com2', 5000, 1,'dummy','dummy')", 5000);</script>
+</td></tr>
+    <tr><td><div id="com3"><b>Total compilation time (milliseconds) : </b>38073</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com3', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td>&nbsp;</td></tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr class="tableHeader"><td colspan="2"><a href="/config/viewDashboard.do?applicationId=1&dashBID=jvmThreads">Thread Details</a></td></tr>
+    <tr><td><div id="com4"><b>Live thread count : </b>51</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com4', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td><div id="com5"><b>Peak thread count : </b>71</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com5', 5000, 1,'dummy','dummy')", 5000);</script>
+</td></tr>
+    <tr><td><div id="com6"><b>Daemon thread count : </b>29</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com6', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td><div id="com7"><b>Total number of threads started : </b>24829</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com7', 5000, 1,'dummy','dummy')", 5000);</script>
+</td></tr>
+    <tr class="tableHeader"><td colspan="2">Memory Details</td></tr>
+    <tr><td><div id="com8"><b>Heap memory usage : </b><table class="HtmlTable"><tr><td><b>Used</b></td><td>21917 KB</td></tr><tr><td ><b>Committed</b></td><td>83008 KB</td></tr><tr><td ><b>Max</b></td><td>517760 KB</td></tr><tr><td><b>Initial</b></td><td>0 KB</td></tr></table></div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com8', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td><div id="com9"><b>Non heap memory usage : </b><table class="HtmlTable"><tr><td ><b>Used</b></td><td>44163 KB</td></tr><tr><td><b>Committed</b></td><td>70328 KB</td></tr><tr><td><b>Max</b></td><td>180224 KB</td></tr><tr><td><b>Initial</b></td><td>23748 KB</td></tr></table></div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com9', 5000, 1,'dummy','dummy')", 5000);</script>
+</td></tr>
+    <tr><td><div id="com10"><b>Objects pending for finalization : </b>0</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com10', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td>&nbsp;</td></tr>
+    <tr><td colspan="2"><div id="com11"><b>Garbage collector : </b>&lt;error&gt;</div>
+</td></tr>
+    <tr><td colspan="2"><div id="com12"><b>Garbage collector : </b>&lt;error&gt;</div>
+</td></tr>
+    <tr class="tableHeader"><td colspan="2"><a href="/config/viewDashboard.do?applicationId=1&dashBID=classes">Classes</a></td></tr>
+    <tr><td><div id="com13"><b>Current classes loaded : </b>5631</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com13', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td><div id="com14"><b>Total classes unloaded : </b>107</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com14', 5000, 1,'dummy','dummy')", 5000);</script>
+</td></tr>
+    <tr><td><div id="com15"><b>Total class loaded : </b>5738</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com15', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td>&nbsp;</td></tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
+    <tr class="tableHeader"><td colspan="2">OS Details</td></tr>
+    <tr><td><div id="com16"><b>Total physical memory (bytes) : </b>4294967296</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com16', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td><div id="com17"><b>Free physical memory (bytes) : </b>145793024</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com17', 5000, 1,'dummy','dummy')", 5000);</script>
+</td></tr>
+    <tr><td><div id="com18"><b>Committed virtual memory (bytes) : </b>3535261696</div>
+<script>self.setTimeout("refreshDBComponent('jvmSummary', 'com18', 5000, 1,'dummy','dummy')", 5000);</script>
+</td><td>&nbsp;</td></tr>
+</table>
+        </div>
     
 </div>    
 
 <br/>
 <%-- Configured MBeans --%>
-<%if(appConfig.getMBeans().size() > 0){%>
-<table border="0" width="100%" cellpadding="0" cellspacing="5">
-<tr><td valign="top" width="100%">
-<table class="table">
-    <thead>
-    <tr class="tableHeader">
-       <th colspan="2">Managed jApps</th>
-    </tr>
-    </thead>
-    <tbody>
-<%
-    List mbeans = appConfig.getMBeans();
-    List sortedMBeans = new ArrayList(mbeans);
-    Collections.sort(sortedMBeans, new Comparator(){
-        public int compare(Object obj1, Object obj2){
-            String name1 = ((MBeanConfig)obj1).getName();
-            String name2 = ((MBeanConfig)obj2).getName();
-            return name1.compareTo(name2);
-        }
-    });
-    for(Iterator it=sortedMBeans.iterator(); it.hasNext();){
-        MBeanConfig mbeanConfig = (MBeanConfig)it.next();
-%>
-    <tr>
-        <td class="plaintext" width="25%">
-            <a href="/app/mbeanView.do?<%=RequestParams.APPLICATION_ID%>=<%=appConfig.getApplicationId()%>&<%=RequestParams.OBJECT_NAME%>=<%=URLEncoder.encode(mbeanConfig.getObjectName(), "UTF-8")%>">
-                    <%=mbeanConfig.getName()%></a>
-        </td>
-        <td class="plaintext">
-            <%=mbeanConfig.getObjectName()%>
-        </td>
-    </tr>
-<%
-    }
-%>
-</tbody>
-</table>
-</td></tr>
-</table>
-<br/>
-<%}%>
-<%
-if(appConfig.getAlerts().size() > 0){
-%>
-<table border="0" width="100%" cellpadding="0" cellspacing="5">
-<tr><td valign="top" width="100%">
-<table cellspacing="0" cellpadding="5" width="900" class="table">
-    <thead>
-    <tr class="tableHeader">
-        <th colspan="6">Configured Alerts</th>
-    </tr>
-    
-    <tr>
-        <th class="headtext1">Alert Name</th>
-        <th class="headtext1">Source</th>
-        <th class="headtext1">Source Type</th>
-        <th class="headtext1">Alert Delivery</th>
-        <th class="headtext1">&nbsp;</th>
-        <th class="headtext1">&nbsp;</th>
-    </tr>
-    </thead>
-    <tbody>
-    <%
-        List alerts = appConfig.getAlerts();
-        Iterator itr = alerts.iterator();
-        while(itr.hasNext()){
-            AlertConfig alertConfig = (AlertConfig)itr.next();
-            String[] alertDelivery = alertConfig.getAlertDelivery();
-            String alertDel = "";
-            for(int i=0; i<alertDelivery.length;i++){
-                if(i>0){
-                    alertDel = alertDel + "," + alertDelivery[i];
-                }else{
-                    alertDel = alertDel + alertDelivery[i];
-                }
-            }
-    %>
-    <tr>
-        <td class="plaintext">
-             <%=alertConfig.getAlertName()%>
-        </td>
-        <td class="plaintext">
-            <%if(alertConfig.getAlertSourceConfig().getObjectName() != null){%>
-            <a href="/app/mbeanView.do?<%=RequestParams.APPLICATION_ID%>=<%=alertConfig.getAlertSourceConfig().getApplicationConfig().getApplicationId()%>&<%=RequestParams.OBJECT_NAME%>=<%=URLEncoder.encode(alertConfig.getAlertSourceConfig().getObjectName(), "UTF-8")%>">
-             <%=ObjectName.getShortName(alertConfig.getAlertSourceConfig().getObjectName())%>
-            <%}else{ %>
-             	&nbsp;
-            <%} %>
-        </td>
-        <td class="plaintext"><%=alertConfig.getAlertSourceConfig().getSourceTypeDesc()%></td>
-        <td class="plaintext"><%=alertDel%></td>
-        <td align="right" width="60">
-            <%
-                String editAlertLink ="/config/showEditAlert.do?"
-                        + RequestParams.ALERT_ID + "=" + alertConfig.getAlertId();
-            %>
-            <jmhtml:link href="<%=editAlertLink%>" acl="<%=ACLConstants.ACL_EDIT_ALERT%>" styleClass="btn">Edit</jmhtml:link>
-        </td>
-        <td align="right" width="60">
-        <%
-            String deleteAlertLink = "JavaScript:deleteAlert('"
-                    + alertConfig.getAlertId() + "','" + appConfig.getApplicationId() + "');";
-        %>
-           <jmhtml:link href="<%=deleteAlertLink%>" acl="<%=ACLConstants.ACL_EDIT_ALERT%>"  styleClass="btn">
-            Delete</jmhtml:link>
-       </td>
-    </tr>
-    <%}%>
-</tbody>
-</table>
-</td></tr>
-</table>
-<%}%>
 
