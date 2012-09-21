@@ -33,10 +33,13 @@
     </c:if>
 </logic:iterate>
 
-<table class="table" border="0" cellspacing="0" cellpadding="5" width="500">
+<table class="table">
+  <thead>
     <tr class="tableHeader">
     <td colspan="2">Add Application</td>
     </tr>
+  </thead>
+  <tbody>  
     <tr>
       <td class="headtext1">Connector:</td>
       <td class="plaintext">
@@ -84,12 +87,13 @@
     <tr>
         <td>&nbsp;</td>
         <td>
-            <jmhtml:submit value="Save" styleClass="Inside3d"/>&nbsp;&nbsp;&nbsp;
+            <jmhtml:submit value="Save" styleClass="btn"/>&nbsp;&nbsp;&nbsp;
             <jmhtml:button property="" value="Cancel"
                     onclick="showAvailableApplications()"
-                    styleClass="Inside3d" />
+                    styleClass="btn" />
         </td>
     </tr>
     </c:if>
+    </tbody>
   </table>
 </jmhtml:form>

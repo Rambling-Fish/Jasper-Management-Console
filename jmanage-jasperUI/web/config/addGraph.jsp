@@ -10,20 +10,23 @@
 <jmhtml:form action="/config/addGraph" method="post"
                                     onsubmit="return validateGraphForm(this)">
 <jmhtml:hidden property="graphId"/>
-<table cellspacing="0" cellpadding="5" width="400" class="table">
+<table class="table">
+<thead>    
 <tr class="tableheader">
 <%
     if(request.getParameter(RequestParams.GRAPH_ID)!=null){
 %>
-    <td colspan="2">Edit Graph</td>
+    <th colspan="2">Edit Graph</th>
 <%
     }else{
 %>
-    <td colspan="2">Add Graph</td>
+    <th colspan="2">Add Graph</th>
 <%
     }
 %>
 </tr>
+</thead>
+<tbody>
 <tr>
     <td class=headtext1>Graph Name</td>
     <td><jmhtml:text property="graphName"/></td>
@@ -47,14 +50,18 @@
         <jmhtml:radio property="scaleUp" value="false"/>Down
     </td>
 </tr>
+</tbody>
 </table>
 <br/>
-<table cellspacing="0" cellpadding="5" width="600" class="table">
+<table class="table">
+<thead>
 <tr class="tableheader">
-    <td>Attribute Name</td>
-    <td>Object Name</td>
-    <td>Display Name</td>
+    <th>Attribute Name</th>
+    <th>Object Name</th>
+    <th>Display Name</th>
 </tr>
+</thead>
+<tbody>
 <%
     String[] attributeNames = (String[])request.getAttribute("attributeNames");
     String[] objectNames = (String[])request.getAttribute("objectNames");
@@ -84,14 +91,15 @@
 %>
 </table>
 <br/>
-<table>
+<table> 
 <tr>
     <td align="center" colspan="2">
-        <jmhtml:submit property="" value="Save" styleClass="Inside3d" />
+        <jmhtml:submit property="" value="Save" styleClass="btn" />
         &nbsp;&nbsp;&nbsp;
         <jmhtml:button property="" value="Cancel"
-                onclick="JavaScript:history.back();" styleClass="Inside3d" />
+                onclick="JavaScript:history.back();" styleClass="btn" />
     </td>
 </tr>
+</tbody>
 </table>
 </jmhtml:form>

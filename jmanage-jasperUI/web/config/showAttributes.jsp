@@ -46,10 +46,13 @@
         String objectName = (String)itr.next();
 %>
 <jmhtml:hidden property="mbeans" value="<%=objectName%>"/>
-<table class="table" border="0" cellspacing="0" cellpadding="5" width="600">
+<table class="table table-bordered">
+  <thead>
     <tr class="tableHeader">
-        <td colspan="4" nowrap="true"><%=ObjectName.getShortName(objectName)%></td>
+        <th colspan="4" nowrap="true"><%=ObjectName.getShortName(objectName)%></th>
     </tr>
+   </thead>
+   <tbody> 
 <%
         List attributes = (List)mbeanAttributesMap.get(objectName);
         for(Iterator it=attributes.iterator();it.hasNext();){
@@ -80,6 +83,7 @@
 <%
         }//inner for loop
 %>
+</tbody>
 </table>
 <br/>
 <%
@@ -88,10 +92,10 @@
 <table>
     <tr>
         <td align="center" colspan="2">
-            <jmhtml:submit property="" value="Next" styleClass="Inside3d" />
+            <jmhtml:submit property="" value="Next" styleClass="btn" />
             &nbsp;&nbsp;&nbsp;
             <jmhtml:button property="" value="Cancel"
-                    onclick="JavaScript:history.back();" styleClass="Inside3d" />
+                    onclick="JavaScript:history.back();" styleClass="btn" />
         </td>
     </tr>
 </table>

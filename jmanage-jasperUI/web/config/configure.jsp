@@ -8,6 +8,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
     <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/custom.css" rel="stylesheet" type="text/css" />
 </head>
 <body leftmargin="10" topmargin="10" marginwidth="0" marginheight="0">
 <span class="headtext"><b><br />Configure</b></span><br /><br />
@@ -22,9 +25,9 @@
     </tr>
   </table>
   </br>
-  <jmhtml:submit value="Save" styleClass="Inside3d"/>
+  <jmhtml:submit value="Save" styleClass="btn"/>
   &nbsp;&nbsp;&nbsp;
-  <jmhtml:button property="" value="Back" onclick="JavaScript:history.back();" styleClass="Inside3d" />
+  <jmhtml:button property="" value="Back" onclick="JavaScript:history.back();" styleClass="btn" />
   </jmhtml:form>
 </body>
 </html>

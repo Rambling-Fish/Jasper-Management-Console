@@ -1,36 +1,32 @@
 <!--/auth/showLogin.jsp-->
 <%@ page errorPage="/error.jsp" %>
 <%@ taglib uri="/WEB-INF/tags/jmanage/html.tld" prefix="jmhtml"%>
-
+<h1>Jasper Console</h1>
 <jmhtml:javascript formName="loginForm" />
-<jmhtml:form action="/auth/login" method="post" focus="username"
+<jmhtml:form action="/auth/login" styleClass="form-horizontal" method="post" focus="username"
                             onsubmit="return validateLoginForm(this)" >
 
 <jmhtml:errors />
 <br/>
-<table cellspacing="0" cellpadding="5" width="400" class="table">
-  <tr class="tableHeader">
-    <td colspan="2">Login</td>
-  </tr>
-  <tr>
-    <td class="headtext1">
-        Username
-    </td>
-    <td>
-        <jmhtml:text property="username" />
-    </td>
-  </tr>
-  <tr>
-    <td class="headtext1">
-        Password
-    </td>
-    <td>
-        <jmhtml:password property="password" />
-    </td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td><jmhtml:submit styleClass="Inside3d" value="Login" /></td>
-  </tr>
-</table>
+
+  <legend>Login</legend>
+  <div class="control-group">
+    <label class="control-label">Username</label>
+    <div class="controls">
+      <jmhtml:text property="username" />
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label">Password</label>
+    <div class="controls">
+      <jmhtml:password property="password" />
+    </div>
+  </div>
+  <div class="control-group">  
+    <div class="controls">
+    <jmhtml:submit styleClass="btn" value="Login" />
+   </div>
+  </div>
+
+  
 </jmhtml:form>

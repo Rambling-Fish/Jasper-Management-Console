@@ -17,10 +17,13 @@
 <jmhtml:form action="/config/showAddApplication.do" method="post">
     <jmhtml:hidden property="type" value="" />
 </jmhtml:form>
-<table class="table" border="0" cellspacing="0" cellpadding="5" width="300">
+<table class="table">
+  <thead>
 <tr class="tableHeader">
-    <td>Select Application Type</td>
+    <th>Select Application Type</th>
 </tr>
+</thead>
+<tbody>
 
 <%
     Map applications = (Map)request.getAttribute(RequestAttributes.AVAILABLE_APPLICATIONS);
@@ -34,4 +37,5 @@
     </td>
   </tr>
   <%}//while ends %>
+  </tbody>
 </table>

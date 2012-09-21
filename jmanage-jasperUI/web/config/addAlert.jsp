@@ -20,18 +20,20 @@
 <jmhtml:hidden property="expression" />
 
 <table cellspacing="0" cellpadding="5" width="400" class="table">
+<thead>
 <tr class="tableHeader">
 <%
     if(request.getParameter(RequestParams.ALERT_ID)!=null){
 %>
-    <td colspan="2">Edit Alert</td>
+    <th colspan="2">Edit Alert</th>
 <%
     }else{
 %>
-    <td colspan="2">Add Alert</td>
+    <th colspan="2">Add Alert</th>
 <%}%>
 </tr>
-
+</thead>
+<tbody>
 <tr>
     <td class="headtext1">Name:</td>
     <td><jmhtml:text property="alertName" /></td>
@@ -132,10 +134,11 @@ if(!sourceType.equals(AlertSourceConfig.SOURCE_TYPE_APPLICATION_DOWN)){
 
 <tr>
     <td align="center" colspan="2">
-        <jmhtml:submit property="" value="Save" styleClass="Inside3d" />
+        <jmhtml:submit property="" value="Save" styleClass="btn" />
         &nbsp;&nbsp;&nbsp;
-        <jmhtml:button property="" value="Cancel" onclick="JavaScript:history.back();" styleClass="Inside3d" />
+        <jmhtml:button property="" value="Cancel" onclick="JavaScript:history.back();" styleClass="btn" />
     </td>
 </tr>
+</tbody>
 </table>
 </jmhtml:form>

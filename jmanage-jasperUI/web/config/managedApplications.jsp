@@ -24,10 +24,13 @@
         }
     }
 </script>
-<table cellspacing="0" cellpadding="5" width="600" class="table">
-    <tr class="tableHeader">
-        <td colspan="4">Managed Applications</td>
-    </tr>
+<table class="table">
+    <thead>
+      <tr>
+        <th colspan="4">Managed Applications</th>
+      </tr>
+    </thead>
+    <tbody>
 <%
     List applications = (List)request.getAttribute(RequestAttributes.APPLICATIONS);
     Iterator iterator = applications.iterator();
@@ -64,8 +67,8 @@
       }else{
         href = "/config/showApplicationCluster.do";
       }%>
-    <td align="right"><a href="<%=href%>?<%=RequestParams.APPLICATION_ID+"="+applicationConfig.getApplicationId()%>" class="a1">Edit</a></td>
-    <td align="right" width="60"><a href="JavaScript:deleteApplication('<%=applicationConfig.getApplicationId()%>', <%=applicationConfig.isCluster()%>);" class="a1">Delete</a></td>
+    <td align="right"><a href="<%=href%>?<%=RequestParams.APPLICATION_ID+"="+applicationConfig.getApplicationId()%>" class="btn">Edit</a></td>
+    <td align="right" width="60"><a href="JavaScript:deleteApplication('<%=applicationConfig.getApplicationId()%>', <%=applicationConfig.isCluster()%>);" class="btn btn-danger">Delete</a></td>
   </tr>
   <%-- if this is a cluster, display the child applications as well --%>
       <%
@@ -88,7 +91,7 @@
             <td class="plaintext">
                 <%=childAppConfig.getURL()%>
             </td>
-            <td align="right"><a href="/config/showEditApplication.do?<%=RequestParams.APPLICATION_ID+"="+childAppConfig.getApplicationId()%>" class="a1">Edit</a></td>
+            <td align="right"><a href="/config/showEditApplication.do?<%=RequestParams.APPLICATION_ID+"="+childAppConfig.getApplicationId()%>" class="btn">Edit</a></td>
             <td align="right" width="60"><a href="JavaScript:deleteApplication('<%=childAppConfig.getApplicationId()%>', false);" class="a1">Delete</a></td>
           </tr>
       <%
@@ -96,19 +99,19 @@
       }
       %>
   <%}//while ends %>
+  </tbody>
 </table>
 <br>
 <%-- don't use the link tag here, as it adds applicationId request param --%>
-<a href="/config/showAvailableApplications.do" class="a">Add Application</a>
-<br>
-<a href="/config/showApplicationCluster.do" class="a">Add Application Cluster</a>
+<a class="btn" href="/config/showAvailableApplications.do" >Add Application</a>
+<a class="btn" href="/config/showApplicationCluster.do">Add Application Cluster</a>
 <br><br>
 
 <%
     List alerts = (List)request.getAttribute("alerts");
     if(alerts.size() == 0){
 %>
-<p class="plaintext">
+<p class="text-info">
     There are no alerts.
 </p>
 <%

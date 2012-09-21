@@ -28,7 +28,7 @@
     ObjectOperationInfo operationInfo =
             (ObjectOperationInfo)request.getAttribute("operationInfo");
 %>
-<table class="table" border="0" cellspacing="0" cellpadding="5" width="900">
+<table class="table">
     <tr>
         <td class="headtext" width="100" nowrap="true" valign="top"><b>Object Name</b></td>
         <td class="plaintext" valign="top">
@@ -93,11 +93,11 @@
                         ACLConstants.ACL_EXECUTE_MBEAN_OPERATIONS,
                         operationInfo.getName())) {
             %>
-            <input tabindex="<%=(tabIndex++) + params.length%>" type="submit" value="Re-Execute" class="Inside3d"/>&nbsp;
+            <input tabindex="<%=(tabIndex++) + params.length%>" type="submit" value="Re-Execute" class="btn"/>&nbsp;
             <%
                 } else {
             %>
-            <input tabindex="<%=(tabIndex++) + params.length%>" type="submit" value="Re-Execute" class="Inside3d" disabled/>&nbsp;
+            <input tabindex="<%=(tabIndex++) + params.length%>" type="submit" value="Re-Execute" class="btn" disabled/>&nbsp;
             <%
                 }
             %>
