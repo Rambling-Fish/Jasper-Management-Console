@@ -27,7 +27,7 @@
         <Arg>
             <New class="org.mortbay.http.SocketListener">
                 <Set name="Port">
-                    <SystemProperty name="jetty.port" default="9090"/>
+                    <SystemProperty name="jetty.port" default="8080"/>
                 </Set>
                 <Set name="MinThreads">5</Set>
                 <Set name="MaxThreads">255</Set>

@@ -16,6 +16,7 @@
 <%@ taglib uri="/WEB-INF/tags/jmanage/html.tld" prefix="jmhtml"%>
 <%@ taglib uri="/WEB-INF/tags/jmanage/jm.tld" prefix="jm"%>
 
+<script type="text/javascript" src="/js/dojo/dojo.js"></script>
 <script language="JavaScript">
     function deleteAlert(alertId, appId){
         var msg;
@@ -52,15 +53,54 @@
 <script type="text/JavaScript" src="/js/dashboard.js"></script>
 <script type="text/JavaScript" src="/js/dojo/dojo.js.js"></script>
 <div> <h3><%=appConfig.getName()%></h3></div>
-<div class="row-fluid">
+<div class="row-fluid"> <!-- main div-->
     <div class="span6">
         <h4>Availability</h4>
         <img class="well" src="<%=availabilityGraphURL%>" />
         <p class="text-info">Status: <%=ApplicationViewHelper.isApplicationUp(appConfig)?"Up":"Down"%> </p>
         <p class="text-info">Recording Since: <%=ApplicationViewHelper.getRecordingSince(appConfig)%></p>
     </div>
-<%-- Configured Graphs --%>
-    <div class="row-fluid">
+    <div class="span6">  <!-- Start/Stop applicaiton --> 
+    <table class="table">
+        <thead>
+            <tr>
+            <th colspan="3">Operations</th>
+            </tr>
+        </thead>
+        <form name="emptyForm" method="post" action="/app/executeOperation.do">
+        <input type="hidden" name="applicationId" value=<%=appConfig.getApplicationId()%> />
+        <input type="hidden" name="objName" value="Mule:name=WrapperManager"/>
+        <tr>
+        <td class="plaintext">
+            <p>Restart</p>
+        </td>
+        <td>
+            <input type="hidden" name="paramCount" value="0"/>
+            <input type="hidden" name="operationName" value="restart"/>
+            <input type="submit" value="Invoke" class="btn pull-right"/>        
+        </td>
+        </tr>
+        </form>
+        <form name="emptyForm" method="post" action="/app/executeOperation.do">
+        <input type="hidden" name="applicationId" value=<%=appConfig.getApplicationId()%> />
+        <input type="hidden" name="objName" value="Mule:name=WrapperManager"/>
+        <tr>
+        <td class="plaintext">
+            <p>Stop</p>
+        </td>
+        <td>
+            <input type="hidden" name="paramCount" value="1"/>
+            <input type="hidden" name="stop0_type" value="int"/>
+            <input type="hidden" name="operationName" value="stop"/>
+            <input type="submit" value="Invoke" class="btn pull-right"/>
+        
+        </td>
+         </tr>
+        </form>
+    </table>
+    </div>
+    
+    <div class="row-fluid"> <%-- Configured Graphs --%>
         <%if(appConfig.getGraphs().size() > 0){%>
             <div class="span6">
         <%}else{%>
@@ -112,9 +152,10 @@
         </div>    
             
             <%}%>
-        </div>
-    
-    <div>
+    </div>
+</div>      
+
+<div> <!-- Dashboard -->
     <table class="table table-condensed">
     <tr><td><div id="com1"><b>App up time (milliseconds) : </b>15915179</div>
 <script>self.setTimeout("refreshDBComponent('jvmSummary', 'com1', 5000, 1,'dummy','dummy')", 5000);</script>
@@ -170,9 +211,7 @@
 </td><td>&nbsp;</td></tr>
 </table>
         </div>
-    
-</div>    
-
+    </div> 
 <br/>
 <%-- Configured MBeans --%>
 
