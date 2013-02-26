@@ -76,8 +76,8 @@ else:
     #start adding JTA hosts
     for item in deployed_jta_list['deployed_apps']:
         if item in deployed_jta_applicaiton_list:
-            #print item
-            #print "\n Item is already added"
+            print item
+            print "\n Item is already added"
             logging.debug(item)
             logging.debug("\n Item is already added")
             continue 
@@ -106,44 +106,45 @@ else:
             #####################################################
             #Add log item to JTA_log applicaiotn in jasperServer-a
             #####################################################
-            # item_name = item + "-log"
-            # key_value = "log[{$JTA_SVR_PATH}/logs/" + item + ".log]"
-            # print "######Key value##############"
-            # print key_value
-            # jasper_itemID = z.item.create({
-            #     'name':item_name,
-            #     'key_':key_value,
-            #     'type':'7',
-            #     'interfaceid':jta_interfaceID[0]['interfaceid'],
-            #     'applications':[jta_log_applicaitonID],
-            #     'hostid':jta_server_hostID,
-            #     'value_type':'2',
-            #     'delay':'10'
-            #     })
+            item_name = item + "-log"
+            key_value = "log[{$JTA_SVR_PATH}/logs/" + item + ".log]"
+            print "######Key value##############"
+            print key_value
+            jasper_itemID = z.item.create({
+                'name':item_name,
+                'key_':key_value,
+                'type':'7',
+                'interfaceid':jta_interfaceID[0]['interfaceid'],
+                'applications':[jta_log_applicaitonID],
+                'hostid':jta_server_hostID,
+                'value_type':'2',
+                'delay':'10'
+                })
             #####################################################
             # Create screen for the new JTA log
-            #####################################################
-            # JTA_log_screenID = z.screen.get(
-            # {
-            # 'selectScreenItems':'extend',
-            # 'filter': { 'name': 'jtaDemo-client-ground-vehicles logs'}, 
-            # 'output': 'extend'
-            # })
-            # print JTA_log_screenID
-            # screen_name = item + " log"
-            # jta_log_screen = z.screen.create({
-            #     'name':screen_name,
-            #     'hsize':'1',
-            #     'vsize':'1',
-            #     })
-            # jta_log_screen['screenids'] = [s.encode('utf-8') for s in jta_log_screen['screenids']]
-            # print "#############ScreenID################"
-            # print jta_log_screen['screenids'][0]
+            ####################################################
+            jta_screen_name = item + 'logs'
+            JTA_log_screenID = z.screen.get(
+            {
+            'selectScreenItems':'extend',
+            'filter': { 'name': jta_screen_name}, 
+            'output': 'extend'
+            })
+            print JTA_log_screenID
+            screen_name = item + " log"
+            jta_log_screen = z.screen.create({
+                'name':screen_name,
+                'hsize':'1',
+                'vsize':'1',
+                })
+            jta_log_screen['screenids'] = [s.encode('utf-8') for s in jta_log_screen['screenids']]
+            print "#############ScreenID################"
+            print jta_log_screen['screenids'][0]
 
             #####################################################
             # Add new application to JTA-jasperServer-a host
             #####################################################
-            jta_jmx_application_name = "JTA-"+item+"-JMX"
+            jta_jmx_application_name = item+"-JMX"
             new_jta_application = z.application.create({
                 'name':jta_jmx_application_name,
                 'hostid':jta_server_hostID

@@ -14,7 +14,7 @@ def get_apps_list(jasper_home_dir):
 		app_list = []
 		dir_list = []
 		#Path for the Mule App's folder 
-		dir_list =  os.listdir(jasper_home_dir + "/jsb-core/mule-standalone-3.3.0/apps/")
+		dir_list =  os.listdir(jasper_home_dir + "../jasper-1.1/jsb-core/mule-standalone-3.3.0/apps/")
 		app_list_file = open('jta_list.txt','w')
 		for item in dir_list:
 			if "txt" in item:
@@ -65,7 +65,7 @@ def get_apps_diff():
 			apps_list[apps_list.index(item)] = item.strip('\n')
 		f.close()
 		#Get currently deployed JTA's 
-		dir_app_list =  os.listdir("jasper/jasper-1.1/jsb-core/mule-standalone-3.3.0/apps/")
+		dir_app_list =  os.listdir("../jasper-1.1/jsb-core/mule-standalone-3.3.0/apps/")
 		for item in dir_app_list:
 			if "txt" in item:
 				current_app_list.append(item.strip('-anchor.txt'))

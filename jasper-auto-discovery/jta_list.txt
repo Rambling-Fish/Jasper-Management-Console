@@ -1,3 +1,1 @@
-jta-client-metpx-1.1
-jta-interface-metpx-ajax-1.1
-jtaDemo-client-helicopters-1.1
+defaul
