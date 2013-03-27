@@ -1,0 +1,47 @@
+#!/bin/sh
+ 
+### BEGIN INIT INFO
+# Provides:          jsb-zabbix-agent
+# Required-Start:    $network $syslog
+# Required-Stop:     $network $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: JSB Zabbix Agent
+# Description:       JSB Zabbix Agent
+# Author:            CoralCEA
+### END INIT INFO
+# Provide logging functions like log_success_msg, log_failure_msg and log_warning_msg
+
+SERVER=jsb
+NAME=zabbix_agentd
+DAEMON=/usr/local/sbin/${NAME}
+CONFIG=/usr/local/etc/${SERVER}_${NAME}.conf
+DAEMON_ARGS=" -c $CONFIG"
+DESC="$SERVER - Zabbix agent daemon"
+PID=/tmp/${SERVER}_$NAME.pid
+USER=jasper
+ 
+test -f $DAEMON || exit 0
+ 
+case "$1" in
+  start)
+    echo "Starting $SERVER Zabbix Agent..."
+    start-stop-daemon --start --oknodo --pidfile $PID -u $USER --exec $DAEMON --$DAEMON_ARGS
+    ;;
+  stop)
+    echo "Stopping $DESC: $NAME"
+    start-stop-daemon --stop --quiet --pidfile $PID --retry=TERM/10/KILL/5 && return 0
+    start-stop-daemon --stop --oknodo --name $NAME --pidfile $PID --retry=TERM/10/KILL/5
+    ;;
+  restart|force-reload)
+    $0 stop
+    $0 start
+    ;;
+   *)
+    N=/etc/init.d/$NAME
+    echo "Usage: $N {start|stop|restart|force-reload}" >&2
+    exit 1
+    ;;
+esac
+
+exit 0

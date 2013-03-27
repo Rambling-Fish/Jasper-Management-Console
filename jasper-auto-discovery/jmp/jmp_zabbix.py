@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 #####################################################
 #  Zabbix rleated operations: login, check hosts,   #
-#  update hosts, update applicaitons                #
+#  update hosts, update applications                #
 #####################################################
 
 import zabbix_api
@@ -11,7 +11,7 @@ import sys
 import json
 import socket
 import logging
-import jmp_constants
+#import jmp_constants
 from zabbix_api import ZabbixAPI, ZabbixAPIException
 
 #####################################################
@@ -23,10 +23,10 @@ from zabbix_api import ZabbixAPI, ZabbixAPIException
 def jmp_info(name):
         datafile = file(name)
         if not datafile:
-            logging.error('file was not found')
+            logging.error('jmp.properties file was not found')
         else:
             z_data = {}
-            logging.info('file was found')
+            logging.info('jmp.properties file was found')
             for line in datafile:
                 if "#" in line:
                     continue
@@ -118,7 +118,7 @@ def z_logging():
         zabbix_info = jmp_info('jmp.properties')
         #print zabbix_info
         logging.debug(zabbix_info)
-        zagent_info = z_info(zabbix_info['jsb_z_agent_conf'])
+        zagent_info = z_info(zabbix_info['jta_z_agent_conf'])
         #print zagent_info
         logging.debug(zagent_info)
         zabbix_server_username=zabbix_info['username']
@@ -141,14 +141,13 @@ def z_checkHostgroup(zabbix_handler, hostGroupName):
         #'filter': { 'name': hostgroup}, 
         'output': 'extend'
         })
-        print hostgroups
+        logging.debug(hostgroups)
         for item in hostgroup:
                 if hostGroupName:
-                    print "JasperServers exist"
+                    logging.debug("JasperServers exist")
                     return True
                 else:
-                    #print "JasperServer hostgroup is not there, talk to your system Administrator"
-                    logging.debug("JasperServer hostgroup is not there, talk to your system Administrator")
+                    logging.debug("JasperServer hostgroup not found, talk to your system Administrator")
                     return False
 #####################End#############################
 #####################################################
@@ -162,8 +161,6 @@ def get_jta_templateid(zabbix_handler, template_name):
             'filter': { 'name': template_name}, 
             'output': 'extend'
             })
-        #print "JTA TEMPLATE ID IS"
-        #print jta_template[0]['templateid']
         logging.info("JTA Template id is for"+ template_name)
         logging.info(jta_template[0]['templateid'])
         return jta_template[0]['templateid']
@@ -175,6 +172,7 @@ def get_jta_templateid(zabbix_handler, template_name):
 #####################################################
 def get_zabbix_api_version(zabbix_handler):
             print zabbix_handler.api_version()
+            logging.debug(zabbix_handler.api_version())
 #####################End#############################
 
 #####################################################
@@ -188,19 +186,17 @@ def get_jasper_groupid(zabbix_handler,groupName):
             {
             'output': 'extend'
             })
-        print hostgroups
+        logging.debug(hostgroups)
         for item in hostgroups:
-            #item = [s.encode('utf-8') for s in item]
-            print item['name']
+            logging.debug(item['name'])
             if item['name'] == "JasperServers":
-                print item['groupid']
-                logging.debug('JasperServers is found')
+                logging.debug(item['groupid'])
+                logging.debug('group found')
                 return item['groupid']
             else:
                 continue    
-        print "can't find JasperServers Group"
-        logging.debug('Cannot find JasperServers Group please check your Zabbix installation')
-        logging.debug('#####################################################################')
+        print "Can't find JasperServers Group"
+        logging.error('Cannot find JasperServers Group please check your Zabbix installation')
         return 0
 #####################End#############################
 #####################################################
@@ -217,11 +213,9 @@ def get_jasperhosts(zabbix_handler,hostsgroupID):
             })
         for item in hosts:
             if "jta" in item['host']:
-                #print item['host']
-                #print item['hostid']
                 jta_apps_hosts.append(item['host'].strip('\n'))
         jta_apps_hosts = [s.encode('utf-8') for s in jta_apps_hosts]
-        logging.debug('#####################################################')
+        logging.debug('JTA_APPS_HOST')
         logging.debug(jta_apps_hosts)
         return jta_apps_hosts
 #####################End#############################
@@ -238,15 +232,13 @@ def get_hostinterface(zabbix_handler,hostsgroupID):
             })
         for item in hosts:
             if "jta" in item['host']:
-                #print item['host']
-                #print item['hostid']
                 interface = zabbix_handler.hostinterface.get(
                 {
                 'filter': { 'hostid': item['hostid']}, 
                 'output': 'extend'
                 })
-        #logging.debug('#####################################################')
-        #logging.debug(jta_apps_hosts)
+        logging.debug('INTERFACE for host')
+        logging.debug(interface)
         return interface
 #####################End#############################
 #####################################################
@@ -261,8 +253,8 @@ def get_interface(zabbix_handler,hostID):
                 'filter': { 'hostid': hostID}, 
                 'output': 'extend'
                 })
-        #logging.debug('#####################################################')
-        #logging.debug(jta_apps_hosts)
+        logging.debug('INTERFACE for host(s)')
+        logging.debug(interface)
         return interface
 #####################End#############################
 #####################################################
@@ -271,20 +263,17 @@ def get_interface(zabbix_handler,hostID):
 # input:  Zabbix Handle , HostID                    #
 # output:  interface object                         #
 ##################################################### 
-def get_jta_log_applicaitonID(zabbix_handler,HostID):
-        applicaitonID = zabbix_handler.application.get(
+def get_jta_log_applicationID(zabbix_handler,HostID):
+        applicationID = zabbix_handler.application.get(
         {
         'hostids':HostID,
         'filter': { 'name': 'JTA-Logs'}, 
         'output': 'extend'
         })
-        #print"######applicaiton id##############"
-        #print applicaitonID
-        #print applicaitonID[0]['applicationid']
-        logging.debug("######applicaiton id##############")
-        logging.debug(applicaitonID)
-        logging.debug(applicaitonID[0]['applicationid'])
-        return applicaitonID[0]['applicationid']
+        logging.debug("Application id ")
+        logging.debug(applicationID)
+        logging.debug(applicationID[0]['applicationid'])
+        return applicationID[0]['applicationid']
 #####################End#############################
 #####################################################
 #  Function retrive the Application ID for JTA-Logs #
@@ -292,25 +281,38 @@ def get_jta_log_applicaitonID(zabbix_handler,HostID):
 # input:  Zabbix Handle , HostID                    #
 # output:  interface object                         #
 ##################################################### 
-def get_jta_applicaiton_list(zabbix_handler,HostID,keyword):
-        jta_applicaiton_list=[]
-        applicaitons = zabbix_handler.application.get(
+def get_jta_application_list(zabbix_handler,HostID,keyword):
+        jta_application_list=[]
+        applications = zabbix_handler.application.get(
         {
         'hostids':HostID,
-        #'filter': { 'name': keyword}, 
         'output': 'extend'
         })
-        for item in applicaitons:
+        for item in applications:
              if keyword in item['name']:
-                #print item['host']
-                #print item['hostid']
-                jta_applicaiton_list.append(item['name'].strip('\n'))
-        jta_applicaiton_list = [s.encode('utf-8') for s in jta_applicaiton_list]
-        #print jta_applicaiton_list
-        logging.debug("######JTA applicaiton List##############")
-        logging.debug(jta_applicaiton_list)
-        return jta_applicaiton_list
+                jta_application_list.append(item['name'].strip('\n'))
+        jta_application_list = [s.encode('utf-8') for s in jta_application_list]
+        logging.debug("JTA application List for JTA-Logs")
+        logging.debug(jta_application_list)
+        return jta_application_list
 #####################End#############################
+#####################################################
+#  Function retrive the Application ID for          #
+#  jasper.jta.management                            #
+# input:  Zabbix Handle , HostID                    #
+# output:  interface object                         #
+##################################################### 
+def get_jta_management_applicationID(zabbix_handler,HostID):
+        applicationID = zabbix_handler.application.get(
+        {
+        'hostids':HostID,
+        'filter': { 'name': 'jasper.jta.management'},
+        'output': 'extend'
+        })
+        logging.debug("Application id for jta.management ")
+        logging.debug(applicationID)
+        logging.debug(applicationID[0]['applicationid'])
+        return applicationID[0]['applicationid']
 #####################################################
 #  Function to add items for the JTA application #
 # input:  Zabbix Handle , HostGroupName             #
@@ -318,16 +320,14 @@ def get_jta_applicaiton_list(zabbix_handler,HostID,keyword):
 ##################################################### 
 def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, jasper_hostID): 
             #####################################################
-            #Create items for the JTA-JMX application-1
+            #Create items for the JTA-JMX - JTA-JEC Connector Status
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
-            print"##########Jasoer_HOstID#######"
-            print jasper_hostID
+            logging.debug("Jasper_HostID ")
+            logging.debug(jasper_hostID)
             item_name = "JTA-JEC Connector Status"
-            # jmx["{$JTANAME}:type=Connector,name=\"JEC.1\"",Started]
             key_value = 'jmx["Mule.' + jmx_item + ':type=Connector,name=\\"JEC.1\\"",Started]'
-            print"######keyvalue##############"
-            print key_value
+            logging.debug("keyvalue ")
+            logging.debug(key_value)
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -345,17 +345,15 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 1##################"
-            print jasper_itemID
+            
+            logging.debug(" Jasper_itemID JTA-JEC Connector Status")
+            logging.debug(jasper_itemID)
+            
             #####################################################
-            #Create items for the JTA-JMX application-2
+            #Create items for the JTA-JMX - JTA AsyncEventsReceived
             #####################################################
-            # jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA AsyncEventsReceived"
-            #jmx["{$JTANAME}:type=org.mule.Statistics,Application=application totals",AsyncEventsReceived]
             key_value = 'jmx["Mule.' + jmx_item + ':type=org.mule.Statistics,Application=application totals",AsyncEventsReceived]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -373,17 +371,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 2##################"
-            print jasper_itemID
+            logging.debug(" Jasper_itemID JTA AsyncEventsReceived")
+            logging.debug(jasper_itemID)
             #####################################################
-            #Create items for the JTA-JMX application-3
+            #Create items for the JTA-JMX - JTA AverageProcessingTime
             #####################################################
-            # jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA AverageProcessingTime"
-            #jmx["{$JTANAME}:type=org.mule.Statistics,Application=application totals",AverageProcessingTime]
             key_value = 'jmx["Mule.' + jmx_item + ':type=org.mule.Statistics,Application=application totals",AverageProcessingTime]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -401,17 +395,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 3##################"
-            print jasper_itemID
+            logging.debug(" Jasper_itemID JTA AverageProcessingTime")
+            logging.debug(jasper_itemID)
             #####################################################
-            #Create items for the JTA-JMX application-4
+            #Create items for the JTA-JMX - JTA ExecutionErrors
             #####################################################
-            # jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA ExecutionErrors"
-            #jmx["Mule.jtaDemo-client-aircrafts-1.1:type=org.mule.Statistics,Application=application totals",ExecutionErrors]
             key_value = 'jmx["Mule.' + jmx_item + ':type=org.mule.Statistics,Application=application totals",ExecutionErrors]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -429,17 +419,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 4##################"
-            print jasper_itemID
+            logging.debug(" Jasper_itemID JTA ExecutionErrors")
+            logging.debug(jasper_itemID)
             #####################################################
-            #Create items for the JTA-JMX application-5
+            #Create items for the JTA-JMX - JTA FatalErrors
             #####################################################
-            # jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA FatalErrors"
-            #jmx["Mule.jtaDemo-client-aircrafts-1.1:type=org.mule.Statistics,Application=application totals",FatalErrors]
             key_value = 'jmx["Mule.' + jmx_item + ':type=org.mule.Statistics,Application=application totals",FatalErrors]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -457,17 +443,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 5##################"
-            print jasper_itemID
+            logging.debug(" Jasper_itemID JTA FatalErrors")
+            logging.debug(jasper_itemID)
             #####################################################
-            #Create items for the JTA-JMX application-6
+            #Create items for the JTA-JMX - JTA Free Memory
             #####################################################
-            # jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA Free Memory"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,FreeMemory]
             key_value = 'jmx[Mule.' + jmx_item + ':name=MuleContext,FreeMemory]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -487,17 +469,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 6##################"
-            print jasper_itemID
+            logging.debug(" Jasper_itemID JTA Free Memory")
+            logging.debug(jasper_itemID)
             #####################################################
-            #Create items for the JTA-JMX application-7
+            #Create items for the JTA-JMX - JTA Host IP
             #####################################################
-            # jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA Host IP"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,HostIp]
             key_value = 'jmx[Mule.' + jmx_item + ':name=MuleContext,HostIp]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -515,45 +493,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 7##################"
-            print jasper_itemID
+            logging.debug(" Jasper_itemID JTA Host IP")
+            logging.debug(jasper_itemID)
             #####################################################
-            #Create items for the JTA-JMX application-8
+            #Create items for the JTA-JMX JTA InstanceId
             #####################################################
-            # jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
-            item_name = "JTA Host Name"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,Hostname]
-            key_value = 'jmx[Mule.' + jmx_item + ':name=MuleContext,Hostname]'
-            print"######keyvalue##############"
-            print key_value
-            jasper_itemID = zabbix_handler.item.create({
-                'name':item_name,
-                'type':'16',
-                'key_':key_value,
-                'delay':'15',
-                'history':'90',
-                'trends':'365',
-                'value_type':'3',
-                'data_type':'4',
-                'authtype':'0',
-                'username':'{$JMX_USERNAME}',
-                'password': '{$JMX_PASSWORD}',
-                'status':'0',
-                'interfaceid': jmx_interface,
-                'applications': [jmx_applicationID],
-                'hostid': jasper_hostID
-                })
-            print "###############Jasper_itemID 8##################"
-            print jasper_itemID
-             #####################################################
-            #Create items for the JTA-JMX application-9
-            #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA InstanceId"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,HostIp]
             key_value = 'jmx[Mule.' + jmx_item + ':name=MuleContext,InstanceId]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -571,17 +517,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 9##################"
-            print jasper_itemID
-             #####################################################
-            #Create items for the JTA-JMX application-10
+            logging.debug(" Jasper_itemID JTA-JEC Connector Status")
+            logging.debug(jasper_itemID)
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
+            #Create items for the JTA-JMX JTA JdkVersion
+            #####################################################
             item_name = "JTA JdkVersion"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,JdkVersion]
             key_value = 'jmx[Mule.' + jmx_item + ':name=MuleContext,JdkVersion]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -599,17 +541,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 10##################"
-            print jasper_itemID
-             #####################################################
-            #Create items for the JTA-JMX application-11
+            logging.debug(" Jasper_itemID JTA JdkVersion")
+            logging.debug(jasper_itemID)
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
+            #Create items for the JTA-JMX JTA Max Memory
+            #####################################################
             item_name = "JTA Max Memory"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,MaxMemory]
             key_value = 'jmx[Mule.' + jmx_item + ':name=MuleContext,MaxMemory]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -629,17 +567,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 11##################"
-            print jasper_itemID
-             #####################################################
-            #Create items for the JTA-JMX application-12
+            logging.debug(" Jasper_itemID JTA Max Memory")
+            logging.debug(jasper_itemID)
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
+            #Create items for the JTA-JMX - JTA MaxProcessingTime
+            #####################################################
             item_name = "JTA MaxProcessingTime"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:type=org.mule.Statistics,Application=application totals",MaxProcessingTime]
             key_value = 'jmx["Mule.' + jmx_item + ':type=org.mule.Statistics,Application=application totals",MaxProcessingTime]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -658,17 +592,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 12##################"
-            print jasper_itemID
-             #####################################################
-            #Create items for the JTA-JMX application-13
+            logging.debug(" Jasper_itemID JTA MaxProcessingTime")
+            logging.debug(jasper_itemID)
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
+            #Create items for the JTA-JMX JTA MinProcessingTime
+            #####################################################
             item_name = "JTA MinProcessingTime"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:type=org.mule.Statistics,Application=application totals",MinProcessingTime]
             key_value = 'jmx["Mule.' + jmx_item + ':type=org.mule.Statistics,Application=application totals",MinProcessingTime]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -686,73 +616,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 13##################"
-            print jasper_itemID
-             #####################################################
-            #Create items for the JTA-JMX application-14
+            logging.debug(" Jasper_itemID JTA MinProcessingTime")
+            logging.debug(jasper_itemID)
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
-            item_name = "JTA ProcessedEvents"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,HostIp]
-            key_value = 'jmx["Mule.' + jmx_item + 'type=org.mule.Statistics,Application=application totals",ProcessedEvents]'
-            print"######keyvalue##############"
-            print key_value
-            jasper_itemID = zabbix_handler.item.create({
-                'name':item_name,
-                'type':'16',
-                'key_':key_value,
-                'delay':'15',
-                'history':'90',
-                'trends':'365',
-                'value_type':'3',
-                'data_type':'0',
-                'authtype':'0',
-                'username':'{$JMX_USERNAME}',
-                'password': '{$JMX_PASSWORD}',
-                'status':'0',
-                'interfaceid': jmx_interface,
-                'applications': [jmx_applicationID],
-                'hostid': jasper_hostID
-                })
-            print "###############Jasper_itemID 14##################"
-            print jasper_itemID
-             #####################################################
-            #Create items for the JTA-JMX application-15
+            #Create items for the JTA-JMX - JTA SyncEventsReceived
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
-            item_name = "JTA Stopped"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,Stopped]
-            key_value = 'jmx[Mule.' + jmx_item + ':name=MuleContext,Stopped]'
-            print"######keyvalue##############"
-            print key_value
-            jasper_itemID = zabbix_handler.item.create({
-                'name':item_name,
-                'type':'16',
-                'key_':key_value,
-                'delay':'15',
-                'history':'90',
-                'trends':'365',
-                'value_type':'3',
-                'data_type':'0',
-                'authtype':'0',
-                'username':'{$JMX_USERNAME}',
-                'password': '{$JMX_PASSWORD}',
-                'status':'0',
-                'interfaceid': jmx_interface,
-                'applications': [jmx_applicationID],
-                'hostid': jasper_hostID
-                })
-            print "###############Jasper_itemID 15##################"
-            print jasper_itemID
-             #####################################################
-            #Create items for the JTA-JMX application-16
-            #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA SyncEventsReceived"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:type=Application,name=\"application totals\"",SyncEventsReceived]
             key_value = 'jmx["Mule.' + jmx_item + ':type=Application,name=\\"application totals\\"",SyncEventsReceived]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -771,17 +641,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 16##################"
-            print jasper_itemID
+            logging.debug(" Jasper_itemID JTA SyncEventsReceived")
+            logging.debug(jasper_itemID)
             #####################################################
-            #Create items for the JTA-JMX application-17
+            #Create items for the JTA-JMX - JTA TotalEventsReceived
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA TotalEventsReceived"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,HostIp]
             key_value = 'jmx["Mule.' + jmx_item + ':type=org.mule.Statistics,Application=application totals",TotalEventsReceived]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -799,17 +665,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 17##################"
-            print jasper_itemID
+            logging.debug(" Jasper_itemID JTA TotalEventsReceived")
+            logging.debug(jasper_itemID)
             #####################################################
-            #Create items for the JTA-JMX application-18
+            #Create items for the JTA-JMX - JTA Total Memory
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
             item_name = "JTA Total Memory"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,HostIp]
             key_value = 'jmx[Mule.' + jmx_item + ':name=MuleContext,TotalMemory]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -829,17 +691,13 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 18##################"
-            print jasper_itemID
-             #####################################################
-            #Create items for the JTA-JMX application-19
+            logging.debug(" Jasper_itemID JTA Total Memory")
+            logging.debug(jasper_itemID)
             #####################################################
-            #jta_jmx_interfaceID = jmp_zabbix.get_interface(z,jta_server_hostID)
+            #Create items for the JTA-JMX - JTA TotalProcessingTime
+            #####################################################
             item_name = "JTA TotalProcessingTime"
-            #jmx[Mule.jtaDemo-client-aircrafts-1.1:name=MuleContext,HostIp]
             key_value = 'jmx["Mule.' + jmx_item + ':type=org.mule.Statistics,Application=application totals",TotalProcessingTime]'
-            print"######keyvalue##############"
-            print key_value
             jasper_itemID = zabbix_handler.item.create({
                 'name':item_name,
                 'type':'16',
@@ -859,8 +717,9 @@ def add_jta_jmx_items(zabbix_handler,jmx_item,jmx_interface, jmx_applicationID, 
                 'applications': [jmx_applicationID],
                 'hostid': jasper_hostID
                 })
-            print "###############Jasper_itemID 19##################"
-            print jasper_itemID
+            logging.debug(" Jasper_itemID JTA TotalProcessingTime")
+            logging.debug(jasper_itemID)
+            
             return True
 #####################End#############################
 

@@ -18,11 +18,11 @@ def get_apps_list(jasper_home_dir):
 		app_list_file = open('jta_list.txt','w')
 		for item in dir_list:
 			if "txt" in item:
-				app_list_file.write(item.strip('-anchor.txt') + os.linesep)
-				app_list.append(item.strip('-anchor.txt'))
+				if "default" not in item:
+					app_list_file.write(item.strip('-anchor.txt') + os.linesep)
+					app_list.append(item.strip('-anchor.txt'))
 		app_list_file.close()
-		print app_list
-		#logging.debug(app_list)
+		logging.debug(app_list)
 		return app_list
 #####################End#############################
 #####################################################
@@ -39,10 +39,8 @@ def update_apps_list(current_apps_list):
 		for item in current_apps_list:
 				app_list_file.write(item + os.linesep)
 				app_list.append(item)
-		print "UPDATED APPS LIST"
-		#logging.debug("UPDATED APPS LIST")
-		print current_apps_list
-		#logging.debug(current_apps_list)
+		logging.debug("UPDATED APPS LIST")
+		logging.debug(current_apps_list)
 		app_list_file.close()
 		return 
 #####################End#############################
@@ -68,11 +66,8 @@ def get_apps_diff():
 		dir_app_list =  os.listdir("../jasper-1.1/jsb-core/mule-standalone-3.3.0/apps/")
 		for item in dir_app_list:
 			if "txt" in item:
-				current_app_list.append(item.strip('-anchor.txt'))
-		#print "Saved Apps List:::"
-		#print apps_list
-		#print "Current app list:::"
-		#print current_app_list
+				if "default" not in item:
+					current_app_list.append(item.strip('-anchor.txt'))
 		logging.debug("Saved Apps List:::")
 		logging.debug(apps_list) 
 		logging.debug("Current app list:::") 
