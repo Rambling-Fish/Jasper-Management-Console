@@ -16,3 +16,4 @@ Jasper Management Console Release 2.0
 •	JMC release 2.0 is based on Zabbix 2.0.4 (http://www.zabbix.com/); an open source performance monitoring solution that integrates JMX into it as well. 
 •	JMC 2.0 Extends 1.1. Provides a new organization based on Applications istead of using hosts.
 •	JMC 2.0 Provides the ability of discovery JTAs using a set of python scripts. Builds after detection a group of applications/items in JMC-Server for each JTA detected.
+•	JMC 2.0 
