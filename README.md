@@ -1,6 +1,6 @@
 Jasper Management Console 
 =======================
-Jasper Management Console takes advantage of the JMX technology and provides the developer/user with access to the different components of the Jasper Service Bus (JSB) system such as Jasper Core Engine  (JCE) and Jasper Transport Applications (JTA)
+Jasper Management Console takes advantage of the JMX technology and provides the developer/user with access to the different components of the Jasper Service Bus (JSB) system such as Jasper Core Engine  (JCE) and Jasper Transport Applications (JTA)...
 
 Release list: 
 Jasper Management Console Release 1.0
